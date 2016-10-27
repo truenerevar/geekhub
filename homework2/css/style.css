@@ -1,0 +1,70 @@
+﻿.content {
+    width: 680px;
+    margin: auto;
+    font-size: 15px;
+    line-height: 1.3;
+}
+.header {
+    text-align: center;
+}
+.main-title {
+    font-size: 27px;
+}
+.authors {
+    font-size: 19px;
+}
+.company {
+    font-size: 16px;
+}
+.chapter {
+    font-size: 24px;
+}
+.subchapter {
+    font-size: 21px;
+}
+.underline-text {
+    text-decoration: underline;
+}
+.bold-text {
+    font-weight: bold;
+}
+.italic-text {
+    font-style: italic;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.img-1 {
+    float: left;
+    max-width: 100%;
+    height: auto;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.img-2 {
+    max-width: 100%;
+    height: auto;
+    display:block;
+    margin:8px 0 0 165px;
+}
+.indentation {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+body {
+    counter-reset: heading;
+}
+article {
+    counter-reset: chapter;
+}
+h2:before {
+    counter-increment: heading;
+    content: counter(heading) ". ";
+}
+h3:before {
+    counter-increment: chapter;
+    content: counter(heading) "." counter(chapter) " ";
+}
