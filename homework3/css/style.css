@@ -1,0 +1,180 @@
+/* -------------form------------- */
+body {
+  margin-left: 32px;
+}
+.main-title {
+  font-size: 32px;
+  padding-top: 37px;
+  margin-top: 0;
+}
+.about-self {
+  font-size: 24px;
+  margin-bottom: 22px;
+  margin-top: 25px;
+}
+.try-it {
+  font-size: 16px;
+  white-space: nowrap;
+}
+.bold-text {
+  font-weight: bold;
+}
+.italic-text {
+  font-style: italic;
+}
+.input_first-last-name-width {
+  width: 260px;
+}
+.input_width {
+  width: 50px;
+}
+.legend {
+  font-size: 16px;
+}
+.briefly-fieldset-margin {
+  margin-top: 18px;
+  margin-bottom: 22px;
+}
+.fieldset-width {
+  width: 745px;
+}
+.indents_gender-again {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.font-size-little {
+  font-size: 13px;
+}
+.input_date-width {
+  height: 16px;
+  width: 139px;
+}
+.input_height-width {
+  height: 16px;
+  width: 140px;
+}
+.multiple-text-size {
+  font-size: 13px;
+  width: 123px;
+}
+.indents_first-name {
+  margin-top: 15px;
+  margin-bottom: 14px;
+}
+.indents_last-name {
+  margin-bottom: 17px;
+}
+.indents_gender {
+  margin-bottom: 16px;
+}
+.indents_age {
+  margin-bottom: 15px;
+}
+.indents_checkbox-radio {
+  margin: 3px 0;
+}
+.indents_checkbox-radio-last {
+  margin: 2px 0;
+}
+.indents_p {
+  margin-top: 17px;
+  margin-bottom: 18px;
+}
+.indents_p-htmlbook {
+  margin-top: 18px;
+  margin-bottom: 17px;
+}
+.indents_p-book-number {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.indents_comments {
+  margin-top: 18px;
+  margin-bottom: 13px;
+}
+.option-width {
+  width: 162px;
+}
+.detail-fieldset-margin {
+  margin-bottom: 24px;
+}
+.input_width-placeholder {
+  width: 250px;
+  margin-bottom: 20px;
+}
+.input_width-email {
+  width: 250px;
+  margin-bottom: 13px;
+}
+.indents_spam-subscribe {
+  margin: 0;
+}
+.indents_category-select {
+  margin-top: 2px;
+  margin-bottom: 16px;
+}
+.indents_submit {
+  margin-top: 22px;
+  margin-bottom: 16px;
+}
+li {
+  list-style-type: none;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+span {
+  display: block;
+  margin: 0;
+}
+textarea {
+  width: 375px;
+  height: 138px;
+}
+/* -------------table------------- */
+.object-table-width {
+  width: 1010px;
+  height: 100px;
+  margin: 5px auto 20px;
+  border-spacing: 5px;
+  border: 1px outset;
+}
+.first-crop-table {
+  width: 600px;
+  height: 220px;
+  margin: 0 auto 20px;
+  border-spacing: 5px;
+  border: 1px outset;
+}
+.second-crop-table {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto 20px;
+  border-collapse: collapse;
+  border-style: ridge;
+}
+.division-width {
+  width: 230px;
+}
+table.object-table-width th, td {
+  border: 1px inset;
+}
+table.object-table-width td {
+  border: 1px inset;
+}
+table.first-crop-table th {
+  border: 1px inset;
+}
+table.first-crop-table td {
+  border: 1px inset;
+}
+table.second-crop-table th, td {
+  border: 4px ridge;
+}
+.text-bold {
+  font-weight: bold;
+}
+.align-top {
+  vertical-align: top;
+}

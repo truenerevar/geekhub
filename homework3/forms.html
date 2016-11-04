@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <title>forms and attributes</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+<header class="header">
+  <h1 class="main-title">Урок "Формы": теги и их атрибуты.</h1>
+  <p class="about-self bold-text">Расскажите немного о себе...</p>
+  <p class="try-it">Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные </p>
+</header>
+<form action="#" method="post" target="_blank">
+  <fieldset class="briefly-fieldset-margin fieldset-width">
+    <legend class="legend bold-text">Коротко о себе</legend>
+    <ul>
+      <li class="indents_first-name"><label for="fist-name">Имя: <input class="input_first-last-name-width" type="text" name="first-name" id="fist-name" tabindex="1"></label></li>
+      <li class="indents_last-name"><label for="last-name">Фамилия: <input class="input_first-last-name-width" type="text" name="last-name" id="last-name" tabindex="2"></label></li>
+      <li class="indents_gender"><label for="gender-male">Пол: <input name="gender" id="gender-male" type="radio" checked value="male" onclick="document.getElementById('gender-again-male').checked=true;" tabindex="3">мужской</label>
+      <label for="gender-female"><input name="gender" id="gender-female" type="radio" value="female" onclick="document.getElementById('gender-again-female').checked=true;">женский</label></li>
+      <li class="indents_age"><label for="age">Возраст: <input class="input_width" name="age" id="age" type="number" min="6" tabindex="4"> лет</label></li>
+    </ul>
+  </fieldset>
+  <fieldset class="fieldset-width detail-fieldset-margin">
+    <legend class="legend bold-text">Подробнее о себе</legend>
+    <ul>
+      <li class="indents_gender-again"><label class="font-size-little" for="gender-again-male"><input name="gender-again" type="radio" id="gender-again-male" checked value="male" onclick="document.getElementById('gender-male').checked=true;" tabindex="5"> Молодой человек</label></li>
+      <li class="indents_gender-again"><label class="font-size-little" for="gender-again-female"><input name="gender-again" type="radio" id="gender-again-female" value="female" onclick="document.getElementById('gender-female').checked=true;"> Девушка</label></li>
+      <li><label for="birthday" class="font-size-little"><input type="date" name="birthday" id="birthday" class="input_date-width" tabindex="6"> Дата рождения</label></li>
+      <li><label for="family-status" class="font-size-little"><input type="text" name="family-status" id="family-status"  class="input_height-width" tabindex="7"> Семейное положение</label></li>
+      <li><label for="social-status" class="font-size-little"><input type="text" name="social-status" id="social-status" class="input_height-width" tabindex="8"> Социальный статус</label></li>
+      <li><label for="location" class="font-size-little"><input type="text" name="location" id="location" class="input_height-width" tabindex="9"> Местожительство</label></li>
+      <li><p class="bold-text indents_p">Что вы обычно делаете на выходных:</p></li>
+      <li class="indents_checkbox-radio"><label for="sleeping"><input type="checkbox" id="sleeping" name="weekend-stuff" value="sleeping" tabindex="10"> Сплю</label></li>
+      <li class="indents_checkbox-radio"><label for="fun-with-friends"><input type="checkbox" id="fun-with-friends" name="weekend-stuff" value="fun-with-friends" tabindex="11"> Гуляю с друзьями</label></li>
+      <li class="indents_checkbox-radio-last"><label for="fishing"><input type="checkbox" id="fishing" name="weekend-stuff" value="fishing" tabindex="12"> Хожу на рыбалку</label></li>
+      <li class="indents_checkbox-radio-last"><label for="playing-games"><input type="checkbox" id="playing-games" name="weekend-stuff" value="playing-games" tabindex="13"> Играю в игры</label></li>
+      <li><p class="bold-text indents_p-htmlbook">Рассказать о формах в книге, посвященной HTML:</p></li>
+      <li><label>
+        <select class="option-width font-size-little" tabindex="14">
+          <option value="book1">Site frequency</option>
+          <option value="book2">htmlbook</option>
+          <option value="book3">w3schools</option>
+        </select>
+      </label></li>
+      <li><p class="bold-text indents_p-book-number">Сколько книг вы прочитали за свою жизнь:</p></li>
+      <li class="indents_checkbox-radio"><label for="book-number_0-10"><input name="book_number" type="radio" id="book-number_0-10" value="0-10" tabindex="15">0-10</label></li>
+      <li class="indents_checkbox-radio"><label for="book-number_11-20"><input name="book_number" type="radio" id="book-number_11-20" value="11-20">11-20</label></li>
+      <li class="indents_checkbox-radio-last"><label for="book-number_21-50"><input name="book_number" type="radio" id="book-number_21-50" value="21-50">21-50</label></li>
+      <li class="indents_checkbox-radio-last"><label for="book-number_50+"><input name="book_number" type="radio" id="book-number_50+" value="50+">50+</label></li>
+      <li class="indents_comments"><label><span class="bold-text">Ваши коментарии:</span>
+        <textarea name="text" tabindex="16"></textarea>
+      </label></li>
+      <li class="indents_age"><label><select name="select-position" size="3" multiple tabindex="17">
+        <option class="multiple-text-size" value="position-1">Первая позиция</option>
+        <option class="multiple-text-size" selected value="position-2">Вторая позиция</option>
+        <option class="multiple-text-size" value="position-3">Третья позиция</option>
+      </select></label></li>
+    </ul>
+  </fieldset>
+  <fieldset class="fieldset-width">
+    <legend class="legend bold-text">И в заключении</legend>
+    <ul>
+      <li><input type="text" class="font-size-little input_width-placeholder" name="empty-form" placeholder="Это поле было введено до вас" tabindex="18"></li>
+      <li><label for="email"><span class="bold-text">Email:</span><input class="input_width-email" name="email" id="email" type="email" tabindex="19"></label></li>
+      <li><p class="bold-text indents_spam-subscribe">Хотите подписатся на самую модную рассылку спама?</p></li>
+      <li><p class="indents_category-select italic-text">Выбирите категории</p></li>
+      <li><label for="eqipment"><input class="indents_checkbox-radio" type="checkbox" name="spam" id="eqipment" value="equipment" tabindex="20">Оборудование</label></li>
+      <li><label for="cooking"><input class="indents_checkbox-radio" type="checkbox" name="spam" id="cooking" value="cooking" tabindex="21">Как приготовить обеды</label></li>
+      <li><label for="easy-money"><input class="indents_checkbox-radio" type="checkbox" name="spam" id="easy-money" value="easy-money" tabindex="22">Заработай миллион за два дня!</label></li>
+      <li><p class="bold-text">На сколько сложная задача:</p></li>
+      <li><label for="easy"><input class="indents_checkbox-radio" type="radio" name="difficulty" id="easy" checked value="easy" tabindex="23">Совсем нет</label></li>
+      <li><label for="medium"><input class="indents_checkbox-radio" type="radio" name="difficulty" id="medium" value="medium">Так себе</label></li>
+      <li><label for="hard"><input class="indents_checkbox-radio" type="radio" name="difficulty" id="hard" value="hard">Еле справились</label></li>
+      </ul>
+  </fieldset>
+  <input class="indents_submit" type="submit" value="Отправить" tabindex="24">
+</form>
+</body>
+</html>
