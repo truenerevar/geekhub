@@ -129,7 +129,8 @@ nav a {
   float: left;
   width: 231px;
   height: 242px;
-  border-right: #eeeefb solid 1px;
+  background: url("../img/line-vertical.png") no-repeat right top 6px;
+  /*border-right: #eeeefb solid 1px;*/
 }
 .about-content { width: 211px; }
 .about-content p { margin-bottom: 14px; }
