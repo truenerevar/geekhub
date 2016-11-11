@@ -127,11 +127,11 @@ nav a {
   margin-top: 3px;
   margin-left: 27px;
   float: left;
-  width: 233px;
+  width: 231px;
   height: 242px;
-  background: url("../img/line-vertical.png") left 232px top 7px no-repeat;
+  border-right: #eeeefb solid 1px;
 }
-.about-content { width: 210px; }
+.about-content { width: 211px; }
 .about-content p { margin-bottom: 14px; }
 .researchers {
   position: relative;
@@ -146,7 +146,7 @@ nav a {
   left: 18px;
   width: 415px;
   height: 127px;
-  background: url("../img/line.png") left top no-repeat;
+  border-top: #eeeefb solid 1px;
 }
 .researchers-content {
   position: absolute;
@@ -157,10 +157,12 @@ nav a {
 .services-content {
   position: absolute;
   left: 162px;
-  top: 20px;
+  top: 19px;
   width: 230px;
 }
 .researchers img { margin-top: 2px; }
 .services img { margin-top: 17px; }
-footer { background: url("../img/footer-line.png") left top no-repeat; }
-footer p { padding: 28px 0 0 27px; }
+footer {
+  border-top: #eeeefb solid 5px;
+}
+footer p { padding: 24px 0 0 27px; }
