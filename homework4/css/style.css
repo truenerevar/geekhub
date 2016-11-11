@@ -83,7 +83,10 @@ nav li:first-child {
   list-style: none;
 }
 nav li:last-child { margin: 0; }
-.nav-about { padding-left: 23px; }
+.nav-about {
+  padding-left: 23px;
+  white-space: nowrap
+}
 .nav-researchers { margin-right: 40px; }
 .nav-services { margin-right: 50px; }
 nav a {
