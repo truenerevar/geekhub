@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src:  url("../fonts/myriadproregular/myriadproregular.eot");
+  src:  url("../fonts/myriadproregular/myriadproregular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/myriadproregular/myriadproregular.woff") format("woff"),
+  url("../fonts/myriadproregular/myriadproregular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src:  url("../fonts/helveticaneueltpro-bdex.otf");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/helveticaneueltpro-thex.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 10px;
+  line-height: 1;
+  color: #093500;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  padding:0;
+  margin: 0;
+}
+
+p {
+  line-height: 14px;
+  margin-bottom: 14px;
+}
+
+h2 {
+  font-family: "Myriad Pro Regular", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+h3 {
+  padding-bottom: 2px;
+  color: #80a60f;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.button-arrow {
+  display: block;
+  width: 20px;
+  height: 10px;
+  background: url("../img/arrow.png") no-repeat;
+}
+
+.main-header,
+.main-nav,
+.main-content,
+.main-footer {
+  width: 675px;
+  margin: 0 auto;
+}
+/*
+  Main header stylization
+*/
+.main-header {
+  background: rgba(118,151,21,1);
+  background: linear-gradient(to bottom, rgba(118,151,21,1) 0%, rgba(153,204,1,1) 100%);
+  padding: 24px 32px;
+}
+
+.main-header .logo {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.main-header .logo a {
+  color: #fff;
+}
+/*
+  Main navigation stylization
+*/
+.main-nav {
+  padding: 26px 26px;
+}
+
+.main-nav .navigation li {
+  position: relative;
+  display: inline-block;
+  padding: 0 30px;
+  font-family: "Myriad Pro Regular", sans-serif;
+  font-size: 20px;
+}
+
+.main-nav .navigation li:before {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  display: block;
+  content: "";
+  background: url("../img/four-arrow.png") no-repeat;
+  width: 10px;
+  height: 10px;
+}
+
+.main-nav .navigation li:first-child:before {
+  background: none;
+}
+
+.main-nav .navigation li:first-child {
+   padding-left: 8px;
+ }
+
+.main-nav .navigation li:last-child {
+  padding-right: 0;
+}
+
+.main-nav .navigation li a {
+  color: #093500;
+}
+/*
+  Main footer stylization
+*/
+.main-content {
+  padding: 0;
+}
+
+.main-content .welcome {
+  position: relative;
+  min-height: 190px;
+  padding: 20px 26px;
+  background-color: #f0f1ff;
+}
+
+.main-content .welcome:before {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translate(0, -50%);
+  width: 267px;
+  height: 190px;
+  content: "";
+  background: url("../img/flask.png") no-repeat;
+  background-size: contain;
+}
+
+.main-content .welcome h2 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  text-align: right;
+  padding: 14px 60px 20px 0;
+}
+
+.main-content .welcome .content-wrapper{
+  padding-left: 47%;
+}
+
+.main-content .about,
+.main-content .page-list {
+  float: left;
+  padding: 12px 26px 8px;
+}
+
+.main-content .about {
+  position: relative;
+  width: 38%;
+}
+
+.main-content .about:after {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 1px;
+  height: calc(100% - 80px);
+  content: "";
+  background-color: #eee;
+}
+
+.main-content .page-list {
+  width: 62%;
+}
+
+.main-content .page-list .pages {
+  list-style: none;
+}
+
+.main-content .pages li {
+  border-top: 1px solid #eee;
+  padding-top: 18px;
+}
+
+.main-content .pages li:first-child {
+  border: none;
+  padding-top: 0;
+}
+
+.main-content .pages .thumbnail {
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  padding-right: 10px;
+  margin-right: 6px;
+}
+
+.main-content .pages .page-content {
+  display: inline-block;
+  width: calc(60% - 10px);
+}
+/*
+  Main footer stylization
+*/
+.main-footer {
+  padding: 22px 28px;
+  border-top: solid 5px #eeeefb;
+  clear: both;
+}
