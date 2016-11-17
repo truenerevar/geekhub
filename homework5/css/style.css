@@ -177,7 +177,7 @@ Navigation stylization
 }
 
 .main-nav .btn li:first-child {
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(232,236,237,0.7) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,.9) 0%, rgba(232,236,237,1) 100%);
   border-top-left-radius: 25px;
 }
 
@@ -196,7 +196,7 @@ Navigation stylization
 }
 
 /*
-wrapper for main-content+aside stylization
+wrapper for main-content+sidebar stylization
 */
 
 .wrapper {
@@ -258,10 +258,10 @@ Sidebar stylization
   padding: 3px 0;
   display: block;
   width: 102px;
-  border: 3px solid #ff9600;
-  border-radius: 50px;
   font: 500 20px "AFKlampenborg";
   text-align: center;
+  border: 3px solid #ff9600;
+  border-radius: 50px;
   color: #555;
 }
 
@@ -356,28 +356,28 @@ footer stylization
 */
 
 .main-footer {
+  margin-bottom: 20px;
   border-top: 1px solid #939598 ;
   clear: both;
-  margin-bottom: 20px;
 }
 
 .main-footer .footer-wrapper {
+  padding: 6px 12px 0;
   margin-left: 33%;
   width: 500px;
   height: 30px;
   background-color: #d9dada;
   border-radius: 0 0 15px 15px;
-  padding: 6px 12px 0;
 }
 
 .main-footer .footer-wrapper p {
-  color: #78797b;
   display: inline-block;
   font: 400 10px "Arial";
+  color: #78797b;
   text-align: left;
 }
 
 .main-footer .footer-wrapper a {
-  display: inline-block;
   float: right;
+  display: inline-block;
 }
