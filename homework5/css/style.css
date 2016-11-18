@@ -1,21 +1,10 @@
 @font-face {
   font-family: 'AFKlampenborg';
-  src: url('../fonts/AFKlampenborg/AFKlampenborg.eot') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'AFKlampenborg';
   src:  url('../fonts/AFKlampenborg/AFKlampenborg.otf')  format('opentype'),
         url('../fonts/AFKlampenborg/AFKlampenborg.woff')format('woff'),
         url('../fonts/AFKlampenborg/AFKlampenborg.ttf')  format('truetype'),
-        url('../fonts/AFKlampenborg/AFKlampenborg.svg#AFKlampenborg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Helios';
-  src: url('../fonts/Helios/Helios.eot') format('embedded-opentype');
+        url('../fonts/AFKlampenborg/AFKlampenborg.svg#AFKlampenborg') format('svg'),
+        url('../fonts/AFKlampenborg/AFKlampenborg.eot') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,7 +13,8 @@
   src:  url('../fonts/Helios/Helios.otf')  format('opentype'),
         url('../fonts/Helios/Helios.woff') format('woff'),
         url('../fonts/Helios/Helios.ttf')  format('truetype'),
-        url('../fonts/Helios/Helios.svg#Helios') format('svg');
+        url('../fonts/Helios/Helios.svg#Helios') format('svg'),
+        url('../fonts/Helios/Helios.eot') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -90,17 +80,16 @@ ol {
 
 .main-header .authorization {
   float: right;
-  margin-top: -5px;
   width: 158px;
-  height: 30px;
+  height: 20px;
   background-color: #fff;
-  border-radius: 50px 50px 100px 100px;
+  border-radius: 0 0 15px 15px;
 }
 
 .main-header .authorization .register-area {
   float: right;
   padding-right: 24px;
-  padding-top: 8px;
+  padding-top: 2px;
   font: 400 11px/14px "Arial";
   color: #747474;
 }
@@ -136,7 +125,7 @@ ol {
   left: 171px;
   top: 59px;
   width: 101px;
-  font:22px/19px "AFKlampenborg";
+  font: 22px/19px "AFKlampenborg";
   font-weight: 500;
   color: #939598;
 }
@@ -159,31 +148,38 @@ Navigation stylization
 }
 
 .main-nav .btn {
-  margin-left: 352px;
-  width: 400px;
+  text-align: right;
+  padding-right: 20px;
   height: 45px;
-  border: 1px solid #939598;
-  border-bottom: none;
-  border-radius: 25px 25px 0 0;
+  border-top: 1px solid transparent;
 }
 
 .main-nav .btn li {
   display: inline-block;
   text-align: center;
-  padding-top: 10px;
-  width: 33%;
+  padding-top: 14px;
+  width: 132px;
   height: 45px;
-  border-right: 1px solid #939598;
 }
 
-.main-nav .btn li:first-child {
-  background: linear-gradient(to bottom, rgba(255,255,255,.9) 0%, rgba(232,236,237,1) 100%);
+.main-nav .btn .home-page-button {
+  border: 1px solid #939598;
   border-top-left-radius: 25px;
+  border-bottom: none;
 }
 
-.main-nav .btn li:last-child {
-  border-right: none;
-  width: calc(33% - 5px);
+.main-nav .btn .goal-button {
+  margin-left: -4px;
+  border: 1px solid #939598;
+  border-bottom: none;
+}
+
+.main-nav .btn .company-button-active {
+  margin-left: -4px;
+  background: linear-gradient(to bottom, rgba(255,255,255,.9) 0%, rgba(232,236,237,1) 100%);
+  border: 1px solid #939598;
+  border-bottom: none;
+  border-top-right-radius: 25px;
 }
 
 .main-nav .btn a {
@@ -191,7 +187,7 @@ Navigation stylization
   color: #939598;
 }
 
-.main-nav .btn .white-blue {
+.main-nav .btn .active {
   color: #45b8fb;
 }
 
@@ -217,6 +213,13 @@ Sidebar stylization
 .sidebar .head {
   margin: 20px 2px;
   font: 400 21px "Arial";
+  color: #03a7fe;
+}
+
+.sidebar .head:after {
+  padding-left: 3px;
+  content: "\f0d7";
+  font-family: "FontAwesome", sans-serif;
   color: #03a7fe;
 }
 
@@ -292,12 +295,12 @@ Content stylization
   color: #010101;
 }
 
-.main-content li {
+.main-content .pages li {
   padding: 14px 0;
   border-top: 1px solid #03A7FE;
 }
 
-.main-content li:last-child {
+.main-content .pages li:last-child {
   padding: 14px 0;
   border-top: 1px solid #03A7FE;
   border-bottom: 1px solid #03A7FE;
@@ -318,6 +321,7 @@ Content stylization
 }
 
 .main-content .container .company-name {
+  margin-bottom: 5px;
   font: 400 22px "Arial";
   color: #03a7fe;
 }
@@ -325,8 +329,15 @@ Content stylization
 .main-content .container .company-form {
   width: 394px;
   margin: 0 auto;
-  border-collapse: separate;
-  -webkit-border-vertical-spacing: 5px;
+  border-collapse: collapse;
+}
+
+.main-content .container .company-form tr {
+  border-top: 3px solid rgba(255,255,255,0.5);
+}
+
+.main-content .container .company-form tr:first-child {
+  border-top: none;
 }
 
 .main-content .container .company-form td {
@@ -335,20 +346,39 @@ Content stylization
   background: #dfe5e6;
 }
 
-.main-content .container .contacts-form {
+.main-content .pages .contacts-form li {
   width: 394px;
-  margin: 0 auto;
-  border-collapse: collapse;
-}
-
-.main-content .container .contacts-form td {
-  width: 50%;
-  padding: 5px 10px;
+  padding: 5px 0 5px 53%;
+  border: none;
   background: #dfe5e6;
 }
 
-.main-content .container .contacts-form .opacity {
+.main-content .pages .contacts-form li:nth-child(odd) {
   background: rgba(223,229,230,0.21);
+}
+.main-content .pages .contacts-form li:nth-child(1):before {
+  padding-left: 3px;
+  content: "\f095";
+  font-family: "FontAwesome", sans-serif;
+  color: #000;
+}
+.main-content .pages .contacts-form li:nth-child(2):before {
+  padding-left: 3px;
+  content: "\f17e";
+  font-family: "FontAwesome", sans-serif;
+  color: #000;
+}
+.main-content .pages .contacts-form li:nth-child(3):before {
+  padding-left: 3px;
+  content: "\f1fa";
+  font-family: "FontAwesome", sans-serif;
+  color: #000;
+}
+.main-content .pages .contacts-form li:nth-child(4):before {
+  padding-left: 3px;
+  content: "\f081";
+  font-family: "FontAwesome", sans-serif;
+  color: #000;
 }
 
 /*
@@ -380,4 +410,107 @@ footer stylization
 .main-footer .footer-wrapper a {
   float: right;
   display: inline-block;
+}
+
+/*
+goals-page stylization
+*/
+.main-nav .btn .company-button {
+  margin-left: -4px;
+  border: 1px solid #939598;
+  border-bottom: none;
+  border-top-right-radius: 25px;
+}
+
+.main-nav .btn .goal-button-active {
+  margin-left: -4px;
+  border: 1px solid #939598;
+  border-bottom: none;
+  background: linear-gradient(to bottom, rgba(255,255,255,.9) 0%, rgba(232,236,237,1) 100%);
+}
+
+.main-content .project-goal {
+  border-top: 1px solid #03A7FE;
+  padding: 10px 0;
+}
+
+.main-content .project-goal p {
+  font: 400 14px/19px "Arial";
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.main-content .project-goal h3 {
+  margin: 20px 0;
+  font: 400 18px "Arial";
+  color: #03a7fe;
+}
+
+/*
+home-page stylization
+*/
+
+.main-nav .btn .home-page-button-active {
+  margin-left: -4px;
+  border: 1px solid #939598;
+  border-bottom: none;
+  background: linear-gradient(to bottom, rgba(255,255,255,.9) 0%, rgba(232,236,237,1) 100%);
+  border-top-left-radius: 25px;
+}
+
+.main-content .home-pages .post-body a {
+  text-decoration: underline;
+  color: #03a7fe;
+}
+
+.main-content .home-pages .post-body {
+  font: 400 14px/19px "Arial";
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.main-content .home-pages .post-body .post-head {
+  border-top: 1px solid #03A7FE;
+  padding: 10px 0;
+}
+
+.main-content .home-pages .post-body .post-head p {
+  display: inline-block;
+}
+
+.main-content .home-pages .post-body .post-head time {
+  float: right;
+  color: #bfc2c2;
+}
+
+.main-content .home-pages .post-body footer p {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.main-content .home-pages .post-body .vote:before {
+  padding-right: 3px;
+  content: "\f111 \f111 \f111";
+  font-family: "FontAwesome", sans-serif;
+  color: #00a0ff;
+}
+
+.main-content .home-pages .post-body .grey-vote:before {
+  margin-left: -3px;
+  padding-right: 3px;
+  content: "\f111 \f111";
+  font-family: "FontAwesome", sans-serif;
+  color: #bfc2c2;
+}
+.main-content .home-pages .post-body .prev-rec {
+  margin-top: 40px;
+  padding: 3px 0;
+  display: block;
+  width: 178px;
+  font: 400 14px "Arial";
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid #00a5ff;
+  border-radius: 50px;
+  color: #000;
 }
