@@ -1,0 +1,536 @@
+@font-face {
+  font-family: 'AFKlampenborg';
+  src:  url('../fonts/AFKlampenborg/AFKlampenborg.otf')  format('opentype'),
+        url('../fonts/AFKlampenborg/AFKlampenborg.woff')format('woff'),
+        url('../fonts/AFKlampenborg/AFKlampenborg.ttf')  format('truetype'),
+        url('../fonts/AFKlampenborg/AFKlampenborg.svg#AFKlampenborg') format('svg'),
+        url('../fonts/AFKlampenborg/AFKlampenborg.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helios';
+  src:  url('../fonts/Helios/Helios.otf')  format('opentype'),
+        url('../fonts/Helios/Helios.woff') format('woff'),
+        url('../fonts/Helios/Helios.ttf')  format('truetype'),
+        url('../fonts/Helios/Helios.svg#Helios') format('svg'),
+        url('../fonts/Helios/Helios.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.text-grey {
+  color: #505050;
+}
+
+.text-blue {
+  color: #03a7fe;
+}
+
+.text-black {
+  color: #000;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  background: linear-gradient(to bottom, rgba(232,236,237,1) 0%, rgba(232,236,237,1) 0%, rgba(217,224,225,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  padding:0;
+  margin: 0;
+}
+
+.main-header,
+.header-wrapper,
+.main-nav,
+.sidebar,
+.main-content,
+.main-footer {
+  width: 780px;
+  margin: 0 auto;
+}
+/*
+  Header stylization
+*/
+.main-header {
+  position: relative;
+}
+
+.main-header .authorization {
+  float: right;
+  width: 158px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+}
+
+.main-header .authorization .register-area {
+  float: right;
+  padding-right: 24px;
+  padding-top: 2px;
+  font: 400 11px/14px "Arial";
+  color: #747474;
+}
+
+.main-header .authorization .register-area li {
+  padding-left: 12px;
+  margin-left: 8px;
+  display:inline-block;
+  height: 12px;
+  border-left: 1px solid #959595;
+}
+
+.main-header .authorization .register-area li:first-child {
+  padding-left: 0;
+  margin-left: 0;
+  border-left: none;
+}
+
+.main-header .authorization .register-area .enter {
+  color: #02a4fa;
+}
+
+.main-header .authorization .register-area .registration {
+  color: #747474;
+}
+
+.main-header .logo {
+  margin-top: 40px;
+}
+
+.main-header .sub-logo {
+  position: absolute;
+  left: 171px;
+  top: 59px;
+  width: 101px;
+  font: 22px/19px "AFKlampenborg";
+  font-weight: 500;
+  color: #939598;
+}
+
+.main-header .community {
+  position: absolute;
+  right: 28px;
+  top: 60px;
+  font: 400 15px "Helios";
+  color: #646464;
+}
+
+/*
+Navigation stylization
+*/
+
+.main-nav {
+  margin-top: -6px;
+  border-bottom: 1px solid #939598;
+}
+
+.main-nav .btn {
+  text-align: right;
+  padding-right: 20px;
+  height: 45px;
+  border-top: 1px solid transparent;
+}
+
+.main-nav .btn li {
+  padding-top: 14px;
+  display: inline-block;
+  width: 132px;
+  height: 45px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-nav .btn .home-page-button {
+  border: 1px solid #939598;
+  border-top-left-radius: 25px;
+  border-bottom: none;
+}
+
+.main-nav .btn .goal-button {
+  margin-left: -4px;
+  border: 1px solid #939598;
+  border-bottom: none;
+}
+
+.main-nav .btn .company-button-active {
+  margin-left: -4px;
+  background: linear-gradient(to bottom, rgba(255,255,255,.9) 0%, rgba(232,236,237,1) 100%);
+  border: 1px solid #939598;
+  border-bottom: none;
+  border-top-right-radius: 25px;
+}
+
+.main-nav .btn a {
+  display: block;
+  height: 100%;
+  font: 400 16px "Arial";
+  color: #939598;
+}
+
+.main-nav .btn .active {
+  color: #45b8fb;
+}
+
+/*
+wrapper for main-content+sidebar stylization
+*/
+
+.wrapper {
+  width: 780px;
+  margin: 0 auto;
+  display: block;
+}
+
+/*
+Sidebar stylization
+*/
+
+.sidebar {
+  float: left;
+  width: 30%;
+}
+
+.sidebar .head {
+  margin: 20px 2px;
+  font: 400 21px "Arial";
+  color: #03a7fe;
+}
+
+.sidebar .head:after {
+  padding-left: 3px;
+  content: "\f0d7";
+  font-family: "FontAwesome", sans-serif;
+  color: #03a7fe;
+}
+
+.sidebar .side-nav li {
+  padding: 8px 0;
+  border-top: 1px solid #939598;
+}
+
+.sidebar .side-nav li:first-child {
+  border-top: none;
+}
+
+.sidebar .side-nav li:before {
+  padding-right: 14px;
+  content: "\f061";
+  font-family: "FontAwesome", sans-serif;
+  color: #03a7fe;
+}
+
+.sidebar .side-nav a {
+  font: 400 14px "Arial";
+  color: #555;
+}
+
+.sidebar .rss-wrapper {
+  margin: 40px 0;
+  padding: 16px 0 16px 62px;
+  display: inline-block;
+  width: 234px;
+  border-top: 1px solid #939598;
+  border-bottom: 1px solid #939598;
+}
+
+.sidebar .rss-wrapper .rss .fa-rss {
+  color: #ff9600;
+}
+
+.sidebar .rss-wrapper .rss {
+  padding: 3px 0;
+  display: block;
+  width: 102px;
+  font: 500 20px "AFKlampenborg";
+  text-align: center;
+  border: 3px solid #ff9600;
+  border-radius: 50px;
+  color: #555;
+}
+
+.sidebar .side-links {
+  margin-bottom: 110px;
+  width: 234px;
+}
+
+.sidebar .side-links li {
+  padding: 5px 0;
+  text-align: center;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.sidebar .side-links li:hover {
+  -webkit-filter: none;
+  filter: none;
+}
+
+/*
+Content stylization
+*/
+
+.main-content {
+  margin-top: 58px;
+  padding-left: 18px;
+  float: left;
+  width: 70%;
+}
+
+.main-content .content-header {
+  margin-bottom: 8px;
+  font: 400 26px "Arial";
+  color: #010101;
+}
+
+.main-content .pages li {
+  padding: 14px 0;
+  border-top: 1px solid #03A7FE;
+}
+
+.main-content .pages li:last-child {
+  padding: 14px 0;
+  border-top: 1px solid #03A7FE;
+  border-bottom: 1px solid #03A7FE;
+}
+
+.main-content .company-logo {
+  display: inline-block;
+  width: 21%;
+  padding-right: 10px;
+  margin: 0 10px;
+  vertical-align: top;
+}
+
+.main-content .container {
+  display: inline-block;
+  width: calc(79% - 30px);
+  vertical-align: top;
+}
+
+.main-content .container .company-name {
+  margin-bottom: 5px;
+  font: 400 22px "Arial";
+  color: #03a7fe;
+}
+
+.main-content .container .company-form {
+  display: block;
+  width: 394px;
+  margin: 0 auto;
+}
+
+.main-content .container .company-form dd, dt {
+  display: inline-block;
+  width: calc(197px - 1px);
+  padding: 5px 10px;
+  background: #dfe5e6;
+  border-top: 3px solid rgba(255,255,255,0.5);
+}
+
+.main-content .container .company-form dt:first-child {
+  border-top: none;
+}
+
+.main-content .container .company-form dd:nth-child(2){
+  border-top: none;
+}
+
+.main-content .container .company-form dd {
+  margin-left: -3px;
+}
+
+.main-content .pages .contacts-form li {
+  width: 394px;
+  padding: 5px 0 5px 53%;
+  border: none;
+  background: #dfe5e6;
+}
+
+.main-content .pages .contacts-form li:nth-child(odd) {
+  background: rgba(223,229,230,0.21);
+}
+
+.main-content .pages .contacts-form li:nth-child(1):before {
+  padding-left: 3px;
+  content: "\f095";
+  font-family: "FontAwesome", sans-serif;
+  color: #000;
+}
+
+.main-content .pages .contacts-form li:nth-child(2):before {
+  padding-left: 3px;
+  content: "\f17e";
+  font-family: "FontAwesome", sans-serif;
+  color: #000;
+}
+
+.main-content .pages .contacts-form li:nth-child(3):before {
+  padding-left: 3px;
+  content: "\f1fa";
+  font-family: "FontAwesome", sans-serif;
+  color: #000;
+}
+
+.main-content .pages .contacts-form li:nth-child(4):before {
+  padding-left: 3px;
+  content: "\f081";
+  font-family: "FontAwesome", sans-serif;
+  color: #000;
+}
+
+/*
+footer stylization
+*/
+
+.main-footer {
+  margin-bottom: 20px;
+  border-top: 1px solid #939598 ;
+  clear: both;
+}
+
+.main-footer .footer-wrapper {
+  padding: 6px 12px 0;
+  margin-left: 33%;
+  width: 500px;
+  height: 30px;
+  background-color: #d9dada;
+  border-radius: 0 0 15px 15px;
+}
+
+.main-footer .footer-wrapper p {
+  display: inline-block;
+  font: 400 10px "Arial";
+  color: #78797b;
+  text-align: left;
+}
+
+.main-footer .footer-wrapper a {
+  float: right;
+  display: inline-block;
+}
+
+/*
+goals-page stylization
+*/
+.main-nav .btn .company-button {
+  margin-left: -4px;
+  border: 1px solid #939598;
+  border-bottom: none;
+  border-top-right-radius: 25px;
+}
+
+.main-nav .btn .goal-button-active {
+  margin-left: -4px;
+  border: 1px solid #939598;
+  border-bottom: none;
+  background: linear-gradient(to bottom, rgba(255,255,255,.9) 0%, rgba(232,236,237,1) 100%);
+}
+
+.main-content .project-goal {
+  border-top: 1px solid #03A7FE;
+  padding: 10px 0;
+}
+
+.main-content .project-goal p {
+  font: 400 14px/19px "Arial";
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.main-content .project-goal h3 {
+  margin: 20px 0;
+  font: 400 18px "Arial";
+  color: #03a7fe;
+}
+
+/*
+home-page stylization
+*/
+
+.main-nav .btn .home-page-button-active {
+  margin-left: -4px;
+  border: 1px solid #939598;
+  border-bottom: none;
+  background: linear-gradient(to bottom, rgba(255,255,255,.9) 0%, rgba(232,236,237,1) 100%);
+  border-top-left-radius: 25px;
+}
+
+.main-content .home-pages .post-body a {
+  text-decoration: underline;
+  color: #03a7fe;
+}
+
+.main-content .home-pages .post-body {
+  font: 400 14px/19px "Arial";
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.main-content .home-pages .post-body .post-head {
+  border-top: 1px solid #03A7FE;
+  padding: 10px 0;
+}
+
+.main-content .home-pages .post-body .post-head p {
+  display: inline-block;
+}
+
+.main-content .home-pages .post-body .post-head time {
+  float: right;
+  color: #bfc2c2;
+}
+
+.main-content .home-pages .post-body footer p {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.main-content .home-pages .post-body .vote:before {
+  padding-right: 3px;
+  content: "\f111 \f111 \f111";
+  font-family: "FontAwesome", sans-serif;
+  color: #00a0ff;
+}
+
+.main-content .home-pages .post-body .grey-vote:before {
+  margin-left: -3px;
+  padding-right: 3px;
+  content: "\f111 \f111";
+  font-family: "FontAwesome", sans-serif;
+  color: #bfc2c2;
+}
+.main-content .home-pages .post-body .prev-rec {
+  margin-top: 40px;
+  padding: 3px 0;
+  display: block;
+  width: 178px;
+  font: 400 14px "Arial";
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid #00a5ff;
+  border-radius: 50px;
+  color: #000;
+}
