@@ -349,6 +349,7 @@ Content stylization
   background: #dfe5e6;
   border-top: 3px solid rgba(255,255,255,0.5);
 }
+
 .main-content .container .company-form dt:first-child {
   border-top: none;
 }
@@ -371,24 +372,28 @@ Content stylization
 .main-content .pages .contacts-form li:nth-child(odd) {
   background: rgba(223,229,230,0.21);
 }
+
 .main-content .pages .contacts-form li:nth-child(1):before {
   padding-left: 3px;
   content: "\f095";
   font-family: "FontAwesome", sans-serif;
   color: #000;
 }
+
 .main-content .pages .contacts-form li:nth-child(2):before {
   padding-left: 3px;
   content: "\f17e";
   font-family: "FontAwesome", sans-serif;
   color: #000;
 }
+
 .main-content .pages .contacts-form li:nth-child(3):before {
   padding-left: 3px;
   content: "\f1fa";
   font-family: "FontAwesome", sans-serif;
   color: #000;
 }
+
 .main-content .pages .contacts-form li:nth-child(4):before {
   padding-left: 3px;
   content: "\f081";
