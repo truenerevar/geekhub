@@ -163,6 +163,10 @@ Navigation stylization
   cursor: pointer;
 }
 
+.main-nav .btn li:hover {
+  background: linear-gradient(to bottom, rgba(255,255,255,.9) 0%, rgba(232,236,237,1) 100%);
+}
+
 .main-nav .btn .home-page-button {
   border: 1px solid #939598;
   border-top-left-radius: 25px;
@@ -362,39 +366,44 @@ Content stylization
   margin-left: -3px;
 }
 
-.main-content .pages .contacts-form li {
+.main-content .container .contacts-form {
   width: 394px;
-  padding: 5px 0 5px 53%;
-  border: none;
+  margin: 0 auto;
+}
+
+.main-content .pages .contacts-form dd {
+  display: inline-block;
+  width: 394px;
+  padding: 5px 0 5px 51%;
   background: #dfe5e6;
 }
 
-.main-content .pages .contacts-form li:nth-child(odd) {
+.main-content .pages .contacts-form dd:nth-child(odd) {
   background: rgba(223,229,230,0.21);
 }
 
-.main-content .pages .contacts-form li:nth-child(1):before {
+.main-content .pages .contacts-form dd:nth-child(1):before {
   padding-left: 3px;
   content: "\f095";
   font-family: "FontAwesome", sans-serif;
   color: #000;
 }
 
-.main-content .pages .contacts-form li:nth-child(2):before {
+.main-content .pages .contacts-form dd:nth-child(2):before {
   padding-left: 3px;
   content: "\f17e";
   font-family: "FontAwesome", sans-serif;
   color: #000;
 }
 
-.main-content .pages .contacts-form li:nth-child(3):before {
+.main-content .pages .contacts-form dd:nth-child(3):before {
   padding-left: 3px;
   content: "\f1fa";
   font-family: "FontAwesome", sans-serif;
   color: #000;
 }
 
-.main-content .pages .contacts-form li:nth-child(4):before {
+.main-content .pages .contacts-form dd:nth-child(4):before {
   padding-left: 3px;
   content: "\f081";
   font-family: "FontAwesome", sans-serif;
@@ -435,6 +444,7 @@ footer stylization
 /*
 goals-page stylization
 */
+
 .main-nav .btn .company-button {
   margin-left: -4px;
   border: 1px solid #939598;
@@ -522,6 +532,7 @@ home-page stylization
   font-family: "FontAwesome", sans-serif;
   color: #bfc2c2;
 }
+
 .main-content .home-pages .post-body .prev-rec {
   margin-top: 40px;
   padding: 3px 0;
