@@ -1,0 +1,668 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+// fonts
+
+@font-face {
+  font-family: 'AFKlampenborg';
+  src:  url('../fonts/AFKlampenborg/AFKlampenborg.otf')  format('opentype'),
+  url('../fonts/AFKlampenborg/AFKlampenborg.woff')format('woff'),
+  url('../fonts/AFKlampenborg/AFKlampenborg.ttf')  format('truetype'),
+  url('../fonts/AFKlampenborg/AFKlampenborg.svg#AFKlampenborg') format('svg'),
+  url('../fonts/AFKlampenborg/AFKlampenborg.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helios';
+  src:  url('../fonts/Helios/Helios.otf')  format('opentype'),
+  url('../fonts/Helios/Helios.woff') format('woff'),
+  url('../fonts/Helios/Helios.ttf')  format('truetype'),
+  url('../fonts/Helios/Helios.svg#Helios') format('svg'),
+  url('../fonts/Helios/Helios.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//main defaults
+
+a {
+  &:link, &:visited, &:hover, &:active {
+    text-decoration: none;
+  }
+}
+
+.text-grey {
+  color: #505050;
+}
+
+.text-blue {
+  color: #03a7fe;
+}
+
+.text-black {
+  color: #000;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  background: linear-gradient(to bottom, rgba(232, 236, 237, 1) 0%, rgba(232, 236, 237, 1) 0%, rgba(217, 224, 225, 1) 0%, rgba(255, 255, 255, 1) 47%, rgba(255, 255, 255, 1) 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+.main-header, .header-wrapper, .main-nav, .sidebar, .main-content, .main-footer {
+  width: 780px;
+  margin: 0 auto;
+}
+
+//header stylization
+
+/*
+  Header stylization
+*/
+
+.main-header {
+  position: relative;
+}
+
+/*
+  Authorization/registration triggers
+*/
+
+.authorization {
+  .reg-area {
+    position: relative;
+    float: right;
+    margin: 0 20px 0 0;
+    padding: 0;
+    width: 150px;
+    height: 20px;
+    background: #fff;
+    list-style: none;
+    border-bottom: 1px solid #fff;
+    -moz-border-radius: 0 0 15px 15px;
+    -webkit-border-radius: 0 0 15px 15px;
+    border-radius: 0 0 15px 15px;
+  }
+  li {
+    float: left;
+    padding: 0 8px 0 16px;
+    text-align: center;
+  }
+  .login {
+    border-right: 1px solid #000;
+    &:last-child {
+      border: none;
+    }
+  }
+  #reg-trigger, #login-trigger {
+    display: block;
+    height: 20px;
+    text-decoration: none;
+    font: 400 11px/14px "Arial";
+    color: #747474;
+  }
+  #reg-trigger:hover, #login-trigger:hover {
+    color: #45b8fb;
+  }
+  .login {
+    #reg-trigger.active, #login-trigger.active {
+      color: #45b8fb;
+    }
+  }
+}
+
+/*
+  Authorization/registration content area
+*/
+
+.authorization {
+  #reg-content, #login-content {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding: 15px;
+    display: none;
+    background: #fff;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+    z-index: 999;
+  }
+  li {
+    #reg-content, #login-content {
+      right: 0;
+      width: 450px;
+    }
+  }
+}
+
+/*
+  Registration-form stylization
+*/
+
+.authorization li #reg-content form {
+  float: left;
+  width: 250px;
+}
+
+.reg-list {
+  display: inline-block;
+}
+
+.inputs {
+  .reg-list input {
+    padding: 10px 5px;
+    margin: 0 0 5px 0;
+    width: 228px;
+    background: #d5f1fa;
+    border: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+  }
+  input {
+    &::-webkit-input-placeholder, &::-moz-placeholder {
+      color: #72b1d7;
+    }
+  }
+}
+
+/*
+  Avatar-block stylization
+*/
+
+.wrapper-avatar {
+  display: inline-block;
+  width: 140px;
+  .dl-photo {
+    margin: 4px 0 40px 0;
+    padding: 8px 0;
+    display: block;
+    width: 132px;
+    font: 400 14px "Arial";
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid #00a5ff;
+    border-radius: 15px;
+    color: #00a8ff;
+  }
+  .avatar {
+    width: 132px;
+  }
+}
+
+/*
+  Registration submit-button stylization
+*/
+
+.reg-submit {
+  position: absolute;
+  right: 46px;
+  bottom: 15px;
+  padding: 7px 0;
+  display: block;
+  width: 54px;
+  background-color: #00a8ff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*
+  Authorization-form stylization
+*/
+.inputs {
+  .forgot-password {
+    float: right;
+    color: #747474;
+    &:hover {
+      color: #45b8fb;
+    }
+  }
+}
+
+.inputs .authorization-input {
+  display: inline-block;
+  li {
+    padding: 8px;
+    margin: 0;
+  }
+  input {
+    padding: 10px 5px;
+    margin: 0 0 5px 0;
+    width: 152px;
+    background: #d5f1fa;
+    border: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .submit-authorization {
+    padding: 7px 10px;
+    width: 54px;
+    background-color: #00a8ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+/*
+  Header logo stylization
+*/
+
+.main-header {
+  .logo {
+    margin-top: 40px;
+  }
+  .sub-logo {
+    position: absolute;
+    left: 171px;
+    top: 59px;
+    width: 101px;
+    font: 22px/19px "AFKlampenborg";
+    font-weight: 500;
+    color: #939598;
+  }
+  .community {
+    position: absolute;
+    right: 28px;
+    top: 60px;
+    font: 400 15px "Helios";
+    color: #646464;
+  }
+}
+
+//nav block
+/*
+  Navigation stylization
+*/
+
+.main-nav {
+  margin-top: -6px;
+  border-bottom: 1px solid #939598;
+  .btn {
+    text-align: right;
+    padding-right: 20px;
+    height: 45px;
+    border-top: 1px solid transparent;
+    li {
+      padding-top: 14px;
+      display: inline-block;
+      width: 132px;
+      height: 45px;
+      text-align: center;
+      cursor: pointer;
+      &:hover {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(232, 236, 237, 1) 100%);
+      }
+    }
+    .home-page-button {
+      border: 1px solid #939598;
+      border-top-left-radius: 25px;
+      border-bottom: none;
+    }
+    .goal-button {
+      margin-left: -4px;
+      border: 1px solid #939598;
+      border-bottom: none;
+    }
+    .company-button-active {
+      margin-left: -4px;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(232, 236, 237, 1) 100%);
+      border: 1px solid #939598;
+      border-bottom: none;
+      border-top-right-radius: 25px;
+    }
+    a {
+      display: block;
+      height: 100%;
+      font: 400 16px "Arial";
+      color: #939598;
+    }
+    .active-btn {
+      color: #45b8fb;
+    }
+  }
+}
+
+//wrapper+content+sidebar block
+/*
+  Wrapper for main-content+sidebar stylization
+*/
+
+.wrapper {
+  width: 780px;
+  margin: 0 auto;
+  display: block;
+}
+
+/*
+  Sidebar stylization
+*/
+
+.sidebar {
+  float: left;
+  width: 30%;
+  .head {
+    margin: 20px 2px;
+    font: 400 21px "Arial";
+    color: #03a7fe;
+    &:after {
+      padding-left: 3px;
+      content: "\f0d7";
+      font-family: "FontAwesome", sans-serif;
+      color: #03a7fe;
+    }
+  }
+  .side-nav {
+    li {
+      padding: 8px 0;
+      border-top: 1px solid #939598;
+      &:first-child {
+        border-top: none;
+      }
+      &:before {
+        padding-right: 14px;
+        content: "\f061";
+        font-family: "FontAwesome", sans-serif;
+        color: #03a7fe;
+      }
+    }
+    a {
+      font: 400 14px "Arial";
+      color: #555;
+    }
+  }
+  .rss-wrapper {
+    margin: 40px 0;
+    padding: 16px 0 16px 62px;
+    display: inline-block;
+    width: 234px;
+    border-top: 1px solid #939598;
+    border-bottom: 1px solid #939598;
+    .rss {
+      .fa-rss {
+        color: #ff9600;
+      }
+      padding: 3px 0;
+      display: block;
+      width: 102px;
+      font: 500 20px "AFKlampenborg";
+      text-align: center;
+      border: 3px solid #ff9600;
+      border-radius: 50px;
+      color: #555;
+    }
+  }
+  .side-links {
+    margin-bottom: 110px;
+    width: 234px;
+    li {
+      padding: 5px 0;
+      text-align: center;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      &:hover {
+        -webkit-filter: none;
+        filter: none;
+      }
+    }
+  }
+}
+
+/*
+  Content stylization
+*/
+
+.main-content {
+  margin-top: 58px;
+  padding-left: 18px;
+  float: left;
+  width: 70%;
+  .content-header {
+    margin-bottom: 8px;
+    font: 400 26px "Arial";
+    color: #010101;
+  }
+  .pages li {
+    padding: 14px 0;
+    border-top: 1px solid #03A7FE;
+    &:last-child {
+      padding: 14px 0;
+      border-top: 1px solid #03A7FE;
+      border-bottom: 1px solid #03A7FE;
+    }
+  }
+  .company-logo {
+    display: inline-block;
+    width: 21%;
+    padding-right: 10px;
+    margin: 0 10px;
+    vertical-align: top;
+  }
+  .container {
+    display: inline-block;
+    width: calc(79% - 30px);
+    vertical-align: top;
+    .company-name {
+      margin-bottom: 5px;
+      font: 400 22px "Arial";
+      color: #03a7fe;
+    }
+    .company-form {
+      display: block;
+      width: 394px;
+      margin: 0 auto;
+      dd {
+        display: inline-block;
+        width: calc(197px - 1px);
+        padding: 5px 10px;
+        background: #dfe5e6;
+        border-top: 3px solid rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}
+
+dt {
+  display: inline-block;
+  width: calc(197px - 1px);
+  padding: 5px 10px;
+  background: #dfe5e6;
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.main-content {
+  .container {
+    .company-form {
+      dt:first-child {
+        border-top: none;
+      }
+      dd {
+        &:nth-child(2) {
+          border-top: none;
+        }
+        margin-left: -3px;
+      }
+    }
+    .contacts-form {
+      width: 394px;
+      margin: 0 auto;
+    }
+  }
+  .pages .contacts-form dd {
+    display: inline-block;
+    width: 394px;
+    padding: 5px 0 5px 51%;
+    background: #dfe5e6;
+    &:nth-child(odd) {
+      background: rgba(223, 229, 230, 0.21);
+    }
+    &:nth-child(1):before {
+      padding-left: 3px;
+      content: "\f095";
+      font-family: "FontAwesome", sans-serif;
+      color: #000;
+    }
+    &:nth-child(2):before {
+      padding-left: 3px;
+      content: "\f17e";
+      font-family: "FontAwesome", sans-serif;
+      color: #000;
+    }
+    &:nth-child(3):before {
+      padding-left: 3px;
+      content: "\f1fa";
+      font-family: "FontAwesome", sans-serif;
+      color: #000;
+    }
+    &:nth-child(4):before {
+      padding-left: 3px;
+      content: "\f081";
+      font-family: "FontAwesome", sans-serif;
+      color: #000;
+    }
+  }
+}
+
+/*
+  Footer stylization
+*/
+
+.main-footer {
+  margin-bottom: 20px;
+  border-top: 1px solid #939598;
+  clear: both;
+  .footer-wrapper {
+    padding: 6px 12px 0;
+    margin-left: 33%;
+    width: 500px;
+    height: 30px;
+    background-color: #d9dada;
+    border-radius: 0 0 15px 15px;
+    p {
+      display: inline-block;
+      font: 400 10px "Arial";
+      color: #78797b;
+      text-align: left;
+    }
+    a {
+      float: right;
+      display: inline-block;
+    }
+  }
+}
+
+/*
+  Goals-page stylization
+*/
+
+.main-nav .btn {
+  .company-button {
+    margin-left: -4px;
+    border: 1px solid #939598;
+    border-bottom: none;
+    border-top-right-radius: 25px;
+  }
+  .goal-button-active {
+    margin-left: -4px;
+    border: 1px solid #939598;
+    border-bottom: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(232, 236, 237, 1) 100%);
+  }
+}
+
+.main-content .project-goal {
+  border-top: 1px solid #03A7FE;
+  padding: 10px 0;
+  p {
+    font: 400 14px/19px "Arial";
+    color: #444;
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin: 20px 0;
+    font: 400 18px "Arial";
+    color: #03a7fe;
+  }
+}
+
+/*
+  Home-page stylization
+*/
+
+.main-nav .btn .home-page-button-active {
+  margin-left: -4px;
+  border: 1px solid #939598;
+  border-bottom: none;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(232, 236, 237, 1) 100%);
+  border-top-left-radius: 25px;
+}
+
+.main-content .home-pages .post-body {
+  a {
+    text-decoration: underline;
+    color: #03a7fe;
+  }
+  font: 400 14px/19px "Arial";
+  color: #444;
+  margin-bottom: 20px;
+  .post-head {
+    border-top: 1px solid #03A7FE;
+    padding: 10px 0;
+    p {
+      display: inline-block;
+    }
+    time {
+      float: right;
+      color: #bfc2c2;
+    }
+  }
+  footer p {
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .vote:before {
+    padding-right: 3px;
+    content: "\f111 \f111 \f111";
+    font-family: "FontAwesome", sans-serif;
+    color: #00a0ff;
+  }
+  .grey-vote:before {
+    margin-left: -3px;
+    padding-right: 3px;
+    content: "\f111 \f111";
+    font-family: "FontAwesome", sans-serif;
+    color: #bfc2c2;
+  }
+  .prev-rec {
+    margin-top: 40px;
+    padding: 3px 0;
+    display: block;
+    width: 178px;
+    font: 400 14px "Arial";
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid #00a5ff;
+    border-radius: 50px;
+    color: #000;
+  }
+}

@@ -1,0 +1,768 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'AFKlampenborg';
+  src: url("../fonts/AFKlampenborg/AFKlampenborg.otf") format("opentype"), url("../fonts/AFKlampenborg/AFKlampenborg.woff") format("woff"), url("../fonts/AFKlampenborg/AFKlampenborg.ttf") format("truetype"), url("../fonts/AFKlampenborg/AFKlampenborg.svg#AFKlampenborg") format("svg"), url("../fonts/AFKlampenborg/AFKlampenborg.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helios';
+  src: url("../fonts/Helios/Helios.otf") format("opentype"), url("../fonts/Helios/Helios.woff") format("woff"), url("../fonts/Helios/Helios.ttf") format("truetype"), url("../fonts/Helios/Helios.svg#Helios") format("svg"), url("../fonts/Helios/Helios.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 34, ../sass/screen.scss */
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+/* line 39, ../sass/screen.scss */
+.text-grey {
+  color: #505050;
+}
+
+/* line 43, ../sass/screen.scss */
+.text-blue {
+  color: #03a7fe;
+}
+
+/* line 47, ../sass/screen.scss */
+.text-black {
+  color: #000;
+}
+
+/* line 51, ../sass/screen.scss */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  background: linear-gradient(to bottom, #e8eced 0%, #e8eced 0%, #d9e0e1 0%, white 47%, white 100%);
+}
+
+/* line 58, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 62, ../sass/screen.scss */
+p, h1, h2, h3, h4, h5, h6, ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 67, ../sass/screen.scss */
+.main-header, .header-wrapper, .main-nav, .sidebar, .main-content, .main-footer {
+  width: 780px;
+  margin: 0 auto;
+}
+
+/*
+  Header stylization
+*/
+/* line 78, ../sass/screen.scss */
+.main-header {
+  position: relative;
+}
+
+/*
+  Authorization/registration triggers
+*/
+/* line 87, ../sass/screen.scss */
+.authorization .reg-area {
+  position: relative;
+  float: right;
+  margin: 0 20px 0 0;
+  padding: 0;
+  width: 150px;
+  height: 20px;
+  background: #fff;
+  list-style: none;
+  border-bottom: 1px solid #fff;
+  -moz-border-radius: 0 0 15px 15px;
+  -webkit-border-radius: 0 0 15px 15px;
+  border-radius: 0 0 15px 15px;
+}
+/* line 101, ../sass/screen.scss */
+.authorization li {
+  float: left;
+  padding: 0 8px 0 16px;
+  text-align: center;
+}
+/* line 106, ../sass/screen.scss */
+.authorization .login {
+  border-right: 1px solid #000;
+}
+/* line 108, ../sass/screen.scss */
+.authorization .login:last-child {
+  border: none;
+}
+/* line 112, ../sass/screen.scss */
+.authorization #reg-trigger, .authorization #login-trigger {
+  display: block;
+  height: 20px;
+  text-decoration: none;
+  font: 400 11px/14px "Arial";
+  color: #747474;
+}
+/* line 119, ../sass/screen.scss */
+.authorization #reg-trigger:hover, .authorization #login-trigger:hover {
+  color: #45b8fb;
+}
+/* line 123, ../sass/screen.scss */
+.authorization .login #reg-trigger.active, .authorization .login #login-trigger.active {
+  color: #45b8fb;
+}
+
+/*
+  Authorization/registration content area
+*/
+/* line 134, ../sass/screen.scss */
+.authorization #reg-content, .authorization #login-content {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 15px;
+  display: none;
+  background: #fff;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  z-index: 999;
+}
+/* line 147, ../sass/screen.scss */
+.authorization li #reg-content, .authorization li #login-content {
+  right: 0;
+  width: 450px;
+}
+
+/*
+  Registration-form stylization
+*/
+/* line 158, ../sass/screen.scss */
+.authorization li #reg-content form {
+  float: left;
+  width: 250px;
+}
+
+/* line 163, ../sass/screen.scss */
+.reg-list {
+  display: inline-block;
+}
+
+/* line 168, ../sass/screen.scss */
+.inputs .reg-list input {
+  padding: 10px 5px;
+  margin: 0 0 5px 0;
+  width: 228px;
+  background: #d5f1fa;
+  border: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 179, ../sass/screen.scss */
+.inputs input::-webkit-input-placeholder, .inputs input::-moz-placeholder {
+  color: #72b1d7;
+}
+
+/*
+  Avatar-block stylization
+*/
+/* line 189, ../sass/screen.scss */
+.wrapper-avatar {
+  display: inline-block;
+  width: 140px;
+}
+/* line 192, ../sass/screen.scss */
+.wrapper-avatar .dl-photo {
+  margin: 4px 0 40px 0;
+  padding: 8px 0;
+  display: block;
+  width: 132px;
+  font: 400 14px "Arial";
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid #00a5ff;
+  border-radius: 15px;
+  color: #00a8ff;
+}
+/* line 204, ../sass/screen.scss */
+.wrapper-avatar .avatar {
+  width: 132px;
+}
+
+/*
+  Registration submit-button stylization
+*/
+/* line 213, ../sass/screen.scss */
+.reg-submit {
+  position: absolute;
+  right: 46px;
+  bottom: 15px;
+  padding: 7px 0;
+  display: block;
+  width: 54px;
+  background-color: #00a8ff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*
+  Authorization-form stylization
+*/
+/* line 231, ../sass/screen.scss */
+.inputs .forgot-password {
+  float: right;
+  color: #747474;
+}
+/* line 234, ../sass/screen.scss */
+.inputs .forgot-password:hover {
+  color: #45b8fb;
+}
+
+/* line 240, ../sass/screen.scss */
+.inputs .authorization-input {
+  display: inline-block;
+}
+/* line 242, ../sass/screen.scss */
+.inputs .authorization-input li {
+  padding: 8px;
+  margin: 0;
+}
+/* line 246, ../sass/screen.scss */
+.inputs .authorization-input input {
+  padding: 10px 5px;
+  margin: 0 0 5px 0;
+  width: 152px;
+  background: #d5f1fa;
+  border: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 256, ../sass/screen.scss */
+.inputs .authorization-input .submit-authorization {
+  padding: 7px 10px;
+  width: 54px;
+  background-color: #00a8ff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*
+  Header logo stylization
+*/
+/* line 272, ../sass/screen.scss */
+.main-header .logo {
+  margin-top: 40px;
+}
+/* line 275, ../sass/screen.scss */
+.main-header .sub-logo {
+  position: absolute;
+  left: 171px;
+  top: 59px;
+  width: 101px;
+  font: 22px/19px "AFKlampenborg";
+  font-weight: 500;
+  color: #939598;
+}
+/* line 284, ../sass/screen.scss */
+.main-header .community {
+  position: absolute;
+  right: 28px;
+  top: 60px;
+  font: 400 15px "Helios";
+  color: #646464;
+}
+
+/*
+  Navigation stylization
+*/
+/* line 298, ../sass/screen.scss */
+.main-nav {
+  margin-top: -6px;
+  border-bottom: 1px solid #939598;
+}
+/* line 301, ../sass/screen.scss */
+.main-nav .btn {
+  text-align: right;
+  padding-right: 20px;
+  height: 45px;
+  border-top: 1px solid transparent;
+}
+/* line 306, ../sass/screen.scss */
+.main-nav .btn li {
+  padding-top: 14px;
+  display: inline-block;
+  width: 132px;
+  height: 45px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 313, ../sass/screen.scss */
+.main-nav .btn li:hover {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, #e8eced 100%);
+}
+/* line 317, ../sass/screen.scss */
+.main-nav .btn .home-page-button {
+  border: 1px solid #939598;
+  border-top-left-radius: 25px;
+  border-bottom: none;
+}
+/* line 322, ../sass/screen.scss */
+.main-nav .btn .goal-button {
+  margin-left: -4px;
+  border: 1px solid #939598;
+  border-bottom: none;
+}
+/* line 327, ../sass/screen.scss */
+.main-nav .btn .company-button-active {
+  margin-left: -4px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, #e8eced 100%);
+  border: 1px solid #939598;
+  border-bottom: none;
+  border-top-right-radius: 25px;
+}
+/* line 334, ../sass/screen.scss */
+.main-nav .btn a {
+  display: block;
+  height: 100%;
+  font: 400 16px "Arial";
+  color: #939598;
+}
+/* line 340, ../sass/screen.scss */
+.main-nav .btn .active-btn {
+  color: #45b8fb;
+}
+
+/*
+  Wrapper for main-content+sidebar stylization
+*/
+/* line 351, ../sass/screen.scss */
+.wrapper {
+  width: 780px;
+  margin: 0 auto;
+  display: block;
+}
+
+/*
+  Sidebar stylization
+*/
+/* line 361, ../sass/screen.scss */
+.sidebar {
+  float: left;
+  width: 30%;
+}
+/* line 364, ../sass/screen.scss */
+.sidebar .head {
+  margin: 20px 2px;
+  font: 400 21px "Arial";
+  color: #03a7fe;
+}
+/* line 368, ../sass/screen.scss */
+.sidebar .head:after {
+  padding-left: 3px;
+  content: "\f0d7";
+  font-family: "FontAwesome", sans-serif;
+  color: #03a7fe;
+}
+/* line 376, ../sass/screen.scss */
+.sidebar .side-nav li {
+  padding: 8px 0;
+  border-top: 1px solid #939598;
+}
+/* line 379, ../sass/screen.scss */
+.sidebar .side-nav li:first-child {
+  border-top: none;
+}
+/* line 382, ../sass/screen.scss */
+.sidebar .side-nav li:before {
+  padding-right: 14px;
+  content: "\f061";
+  font-family: "FontAwesome", sans-serif;
+  color: #03a7fe;
+}
+/* line 389, ../sass/screen.scss */
+.sidebar .side-nav a {
+  font: 400 14px "Arial";
+  color: #555;
+}
+/* line 394, ../sass/screen.scss */
+.sidebar .rss-wrapper {
+  margin: 40px 0;
+  padding: 16px 0 16px 62px;
+  display: inline-block;
+  width: 234px;
+  border-top: 1px solid #939598;
+  border-bottom: 1px solid #939598;
+}
+/* line 401, ../sass/screen.scss */
+.sidebar .rss-wrapper .rss {
+  padding: 3px 0;
+  display: block;
+  width: 102px;
+  font: 500 20px "AFKlampenborg";
+  text-align: center;
+  border: 3px solid #ff9600;
+  border-radius: 50px;
+  color: #555;
+}
+/* line 402, ../sass/screen.scss */
+.sidebar .rss-wrapper .rss .fa-rss {
+  color: #ff9600;
+}
+/* line 415, ../sass/screen.scss */
+.sidebar .side-links {
+  margin-bottom: 110px;
+  width: 234px;
+}
+/* line 418, ../sass/screen.scss */
+.sidebar .side-links li {
+  padding: 5px 0;
+  text-align: center;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+/* line 423, ../sass/screen.scss */
+.sidebar .side-links li:hover {
+  -webkit-filter: none;
+  filter: none;
+}
+
+/*
+  Content stylization
+*/
+/* line 435, ../sass/screen.scss */
+.main-content {
+  margin-top: 58px;
+  padding-left: 18px;
+  float: left;
+  width: 70%;
+}
+/* line 440, ../sass/screen.scss */
+.main-content .content-header {
+  margin-bottom: 8px;
+  font: 400 26px "Arial";
+  color: #010101;
+}
+/* line 445, ../sass/screen.scss */
+.main-content .pages li {
+  padding: 14px 0;
+  border-top: 1px solid #03A7FE;
+}
+/* line 448, ../sass/screen.scss */
+.main-content .pages li:last-child {
+  padding: 14px 0;
+  border-top: 1px solid #03A7FE;
+  border-bottom: 1px solid #03A7FE;
+}
+/* line 454, ../sass/screen.scss */
+.main-content .company-logo {
+  display: inline-block;
+  width: 21%;
+  padding-right: 10px;
+  margin: 0 10px;
+  vertical-align: top;
+}
+/* line 461, ../sass/screen.scss */
+.main-content .container {
+  display: inline-block;
+  width: calc(79% - 30px);
+  vertical-align: top;
+}
+/* line 465, ../sass/screen.scss */
+.main-content .container .company-name {
+  margin-bottom: 5px;
+  font: 400 22px "Arial";
+  color: #03a7fe;
+}
+/* line 470, ../sass/screen.scss */
+.main-content .container .company-form {
+  display: block;
+  width: 394px;
+  margin: 0 auto;
+}
+/* line 474, ../sass/screen.scss */
+.main-content .container .company-form dd {
+  display: inline-block;
+  width: calc(197px - 1px);
+  padding: 5px 10px;
+  background: #dfe5e6;
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 485, ../sass/screen.scss */
+dt {
+  display: inline-block;
+  width: calc(197px - 1px);
+  padding: 5px 10px;
+  background: #dfe5e6;
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 496, ../sass/screen.scss */
+.main-content .container .company-form dt:first-child {
+  border-top: none;
+}
+/* line 499, ../sass/screen.scss */
+.main-content .container .company-form dd {
+  margin-left: -3px;
+}
+/* line 500, ../sass/screen.scss */
+.main-content .container .company-form dd:nth-child(2) {
+  border-top: none;
+}
+/* line 506, ../sass/screen.scss */
+.main-content .container .contacts-form {
+  width: 394px;
+  margin: 0 auto;
+}
+/* line 511, ../sass/screen.scss */
+.main-content .pages .contacts-form dd {
+  display: inline-block;
+  width: 394px;
+  padding: 5px 0 5px 51%;
+  background: #dfe5e6;
+}
+/* line 516, ../sass/screen.scss */
+.main-content .pages .contacts-form dd:nth-child(odd) {
+  background: rgba(223, 229, 230, 0.21);
+}
+/* line 519, ../sass/screen.scss */
+.main-content .pages .contacts-form dd:nth-child(1):before {
+  padding-left: 3px;
+  content: "\f095";
+  font-family: "FontAwesome", sans-serif;
+  color: #000;
+}
+/* line 525, ../sass/screen.scss */
+.main-content .pages .contacts-form dd:nth-child(2):before {
+  padding-left: 3px;
+  content: "\f17e";
+  font-family: "FontAwesome", sans-serif;
+  color: #000;
+}
+/* line 531, ../sass/screen.scss */
+.main-content .pages .contacts-form dd:nth-child(3):before {
+  padding-left: 3px;
+  content: "\f1fa";
+  font-family: "FontAwesome", sans-serif;
+  color: #000;
+}
+/* line 537, ../sass/screen.scss */
+.main-content .pages .contacts-form dd:nth-child(4):before {
+  padding-left: 3px;
+  content: "\f081";
+  font-family: "FontAwesome", sans-serif;
+  color: #000;
+}
+
+/*
+  Footer stylization
+*/
+/* line 550, ../sass/screen.scss */
+.main-footer {
+  margin-bottom: 20px;
+  border-top: 1px solid #939598;
+  clear: both;
+}
+/* line 554, ../sass/screen.scss */
+.main-footer .footer-wrapper {
+  padding: 6px 12px 0;
+  margin-left: 33%;
+  width: 500px;
+  height: 30px;
+  background-color: #d9dada;
+  border-radius: 0 0 15px 15px;
+}
+/* line 561, ../sass/screen.scss */
+.main-footer .footer-wrapper p {
+  display: inline-block;
+  font: 400 10px "Arial";
+  color: #78797b;
+  text-align: left;
+}
+/* line 567, ../sass/screen.scss */
+.main-footer .footer-wrapper a {
+  float: right;
+  display: inline-block;
+}
+
+/*
+  Goals-page stylization
+*/
+/* line 579, ../sass/screen.scss */
+.main-nav .btn .company-button {
+  margin-left: -4px;
+  border: 1px solid #939598;
+  border-bottom: none;
+  border-top-right-radius: 25px;
+}
+/* line 585, ../sass/screen.scss */
+.main-nav .btn .goal-button-active {
+  margin-left: -4px;
+  border: 1px solid #939598;
+  border-bottom: none;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, #e8eced 100%);
+}
+
+/* line 593, ../sass/screen.scss */
+.main-content .project-goal {
+  border-top: 1px solid #03A7FE;
+  padding: 10px 0;
+}
+/* line 596, ../sass/screen.scss */
+.main-content .project-goal p {
+  font: 400 14px/19px "Arial";
+  color: #444;
+  margin-bottom: 20px;
+}
+/* line 601, ../sass/screen.scss */
+.main-content .project-goal h3 {
+  margin: 20px 0;
+  font: 400 18px "Arial";
+  color: #03a7fe;
+}
+
+/*
+  Home-page stylization
+*/
+/* line 612, ../sass/screen.scss */
+.main-nav .btn .home-page-button-active {
+  margin-left: -4px;
+  border: 1px solid #939598;
+  border-bottom: none;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, #e8eced 100%);
+  border-top-left-radius: 25px;
+}
+
+/* line 620, ../sass/screen.scss */
+.main-content .home-pages .post-body {
+  font: 400 14px/19px "Arial";
+  color: #444;
+  margin-bottom: 20px;
+}
+/* line 621, ../sass/screen.scss */
+.main-content .home-pages .post-body a {
+  text-decoration: underline;
+  color: #03a7fe;
+}
+/* line 628, ../sass/screen.scss */
+.main-content .home-pages .post-body .post-head {
+  border-top: 1px solid #03A7FE;
+  padding: 10px 0;
+}
+/* line 631, ../sass/screen.scss */
+.main-content .home-pages .post-body .post-head p {
+  display: inline-block;
+}
+/* line 634, ../sass/screen.scss */
+.main-content .home-pages .post-body .post-head time {
+  float: right;
+  color: #bfc2c2;
+}
+/* line 639, ../sass/screen.scss */
+.main-content .home-pages .post-body footer p {
+  margin-top: 20px;
+  display: inline-block;
+}
+/* line 643, ../sass/screen.scss */
+.main-content .home-pages .post-body .vote:before {
+  padding-right: 3px;
+  content: "\f111 \f111 \f111";
+  font-family: "FontAwesome", sans-serif;
+  color: #00a0ff;
+}
+/* line 649, ../sass/screen.scss */
+.main-content .home-pages .post-body .grey-vote:before {
+  margin-left: -3px;
+  padding-right: 3px;
+  content: "\f111 \f111";
+  font-family: "FontAwesome", sans-serif;
+  color: #bfc2c2;
+}
+/* line 656, ../sass/screen.scss */
+.main-content .home-pages .post-body .prev-rec {
+  margin-top: 40px;
+  padding: 3px 0;
+  display: block;
+  width: 178px;
+  font: 400 14px "Arial";
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid #00a5ff;
+  border-radius: 50px;
+  color: #000;
+}
