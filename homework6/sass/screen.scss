@@ -28,6 +28,11 @@
   font-style: normal;
 }
 
+//main var
+$blue-color: #03a7fe;
+$light-blue-color: #45b8fb;
+$grey-color: #939598;
+
 //main defaults
 
 a {
@@ -41,7 +46,7 @@ a {
 }
 
 .text-blue {
-  color: #03a7fe;
+  color: $blue-color;
 }
 
 .text-black {
@@ -117,11 +122,11 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
     color: #747474;
   }
   #reg-trigger:hover, #login-trigger:hover {
-    color: #45b8fb;
+    color: $light-blue-color;
   }
   .login {
     #reg-trigger.active, #login-trigger.active {
-      color: #45b8fb;
+      color: $light-blue-color;
     }
   }
 }
@@ -232,7 +237,7 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
     float: right;
     color: #747474;
     &:hover {
-      color: #45b8fb;
+      color: $light-blue-color;
     }
   }
 }
@@ -279,7 +284,7 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
     width: 101px;
     font: 22px/19px "AFKlampenborg";
     font-weight: 500;
-    color: #939598;
+    color: $grey-color;
   }
   .community {
     position: absolute;
@@ -297,7 +302,7 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
 
 .main-nav {
   margin-top: -6px;
-  border-bottom: 1px solid #939598;
+  border-bottom: 1px solid $grey-color;
   .btn {
     text-align: right;
     padding-right: 20px;
@@ -315,19 +320,19 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
       }
     }
     .home-page-button {
-      border: 1px solid #939598;
+      border: 1px solid $grey-color;
       border-top-left-radius: 25px;
       border-bottom: none;
     }
     .goal-button {
       margin-left: -4px;
-      border: 1px solid #939598;
+      border: 1px solid $grey-color;
       border-bottom: none;
     }
     .company-button-active {
       margin-left: -4px;
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(232, 236, 237, 1) 100%);
-      border: 1px solid #939598;
+      border: 1px solid $grey-color;
       border-bottom: none;
       border-top-right-radius: 25px;
     }
@@ -335,10 +340,10 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
       display: block;
       height: 100%;
       font: 400 16px "Arial";
-      color: #939598;
+      color: $grey-color;
     }
     .active-btn {
-      color: #45b8fb;
+      color: $light-blue-color;
     }
   }
 }
@@ -364,18 +369,18 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
   .head {
     margin: 20px 2px;
     font: 400 21px "Arial";
-    color: #03a7fe;
+    color: $blue-color;
     &:after {
       padding-left: 3px;
       content: "\f0d7";
       font-family: "FontAwesome", sans-serif;
-      color: #03a7fe;
+      color: $blue-color;
     }
   }
   .side-nav {
     li {
       padding: 8px 0;
-      border-top: 1px solid #939598;
+      border-top: 1px solid $grey-color;
       &:first-child {
         border-top: none;
       }
@@ -383,7 +388,7 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
         padding-right: 14px;
         content: "\f061";
         font-family: "FontAwesome", sans-serif;
-        color: #03a7fe;
+        color: $blue-color;
       }
     }
     a {
@@ -396,8 +401,8 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
     padding: 16px 0 16px 62px;
     display: inline-block;
     width: 234px;
-    border-top: 1px solid #939598;
-    border-bottom: 1px solid #939598;
+    border-top: 1px solid $grey-color;
+    border-bottom: 1px solid $grey-color;
     .rss {
       .fa-rss {
         color: #ff9600;
@@ -444,11 +449,11 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
   }
   .pages li {
     padding: 14px 0;
-    border-top: 1px solid #03A7FE;
+    border-top: 1px solid $blue-color;
     &:last-child {
       padding: 14px 0;
-      border-top: 1px solid #03A7FE;
-      border-bottom: 1px solid #03A7FE;
+      border-top: 1px solid $blue-color;
+      border-bottom: 1px solid $blue-color;
     }
   }
   .company-logo {
@@ -465,7 +470,7 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
     .company-name {
       margin-bottom: 5px;
       font: 400 22px "Arial";
-      color: #03a7fe;
+      color: $blue-color;
     }
     .company-form {
       display: block;
@@ -552,7 +557,7 @@ dt {
 
 .main-footer {
   margin-bottom: 20px;
-  border-top: 1px solid #939598;
+  border-top: 1px solid $grey-color;
   clear: both;
   .footer-wrapper {
     padding: 6px 12px 0;
@@ -581,20 +586,20 @@ dt {
 .main-nav .btn {
   .company-button {
     margin-left: -4px;
-    border: 1px solid #939598;
+    border: 1px solid $grey-color;
     border-bottom: none;
     border-top-right-radius: 25px;
   }
   .goal-button-active {
     margin-left: -4px;
-    border: 1px solid #939598;
+    border: 1px solid $grey-color;
     border-bottom: none;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(232, 236, 237, 1) 100%);
   }
 }
 
 .main-content .project-goal {
-  border-top: 1px solid #03A7FE;
+  border-top: 1px solid $blue-color;
   padding: 10px 0;
   p {
     font: 400 14px/19px "Arial";
@@ -604,7 +609,7 @@ dt {
   h3 {
     margin: 20px 0;
     font: 400 18px "Arial";
-    color: #03a7fe;
+    color: $blue-color;
   }
 }
 
@@ -614,7 +619,7 @@ dt {
 
 .main-nav .btn .home-page-button-active {
   margin-left: -4px;
-  border: 1px solid #939598;
+  border: 1px solid $grey-color;
   border-bottom: none;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(232, 236, 237, 1) 100%);
   border-top-left-radius: 25px;
@@ -623,13 +628,13 @@ dt {
 .main-content .home-pages .post-body {
   a {
     text-decoration: underline;
-    color: #03a7fe;
+    color: $blue-color;
   }
   font: 400 14px/19px "Arial";
   color: #444;
   margin-bottom: 20px;
   .post-head {
-    border-top: 1px solid #03A7FE;
+    border-top: 1px solid $blue-color;
     padding: 10px 0;
     p {
       display: inline-block;
