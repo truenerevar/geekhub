@@ -508,33 +508,36 @@ dt {
       margin: 0 auto;
     }
   }
+  .pages .contacts-form dt {
+    display: none;
+  }
   .pages .contacts-form dd {
     display: inline-block;
     width: 394px;
     padding: 5px 0 5px 51%;
     background: #dfe5e6;
-    &:nth-child(odd) {
+    &:nth-child(even) {
       background: rgba(223, 229, 230, 0.21);
     }
-    &:nth-child(1):before {
+    &:nth-child(2):before {
       padding-left: 3px;
       content: "\f095";
       font-family: "FontAwesome", sans-serif;
       color: #000;
     }
-    &:nth-child(2):before {
+    &:nth-child(3):before {
       padding-left: 3px;
       content: "\f17e";
       font-family: "FontAwesome", sans-serif;
       color: #000;
     }
-    &:nth-child(3):before {
+    &:nth-child(4):before {
       padding-left: 3px;
       content: "\f1fa";
       font-family: "FontAwesome", sans-serif;
       color: #000;
     }
-    &:nth-child(4):before {
+    &:nth-child(5):before {
       padding-left: 3px;
       content: "\f081";
       font-family: "FontAwesome", sans-serif;
