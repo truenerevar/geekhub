@@ -1,0 +1,82 @@
+.modal-form {
+  padding: 20px 10px;
+  position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+  top: 0; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+  left: 0; /* пoлoвинa экрaнa слевa */
+  display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+  width: 100vw;
+  height: 100vh; /* Рaзмеры дoлжны быть фиксирoвaны */
+  background: $color-white;
+  opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+  z-index: 999; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+  overflow: auto;
+
+  .project-title {
+    text-align: center;
+    margin: 60px;
+  }
+
+  .project-list {
+
+    .thumbnail {
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 30px 0;
+      height: 353px;
+      width: 100%;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    .fossil-bg {
+      background-image: url('../img/fossil-banks.png')
+    }
+    .fossil-bank-bg {
+      background-image: url('../img/fossil-free.png')
+    }
+  }
+  .modal-wrap {
+
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+
+    h3 {
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 50px;
+    }
+    .description {
+      font-family: $font-family-sans;
+      line-height: 30px;
+    }
+    .visit-site {
+      padding: 10px 30px;
+      color: $color-white;
+      background: $color-greena;
+      border-radius: 30px;
+      font: 400 16px $font-family-serif;
+
+      &:hover {
+        background-color: $color-green;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+.modal-form {
+  .modal-close {
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    display: block;
+    width: 50px;
+    height: 53px;
+    cursor: pointer;
+    z-index: 100;
+  }
+}

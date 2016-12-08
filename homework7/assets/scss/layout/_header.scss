@@ -1,0 +1,89 @@
+//
+// Header
+// --------------------------------------------------
+
+.bgvideo {
+  position: static;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.main-header {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+
+  @media (max-width: 1024px) {
+    background: url("../img/header-bg.png");
+    background-size: cover;
+  }
+
+  .scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%,0);
+    display: block;
+    color: $color-white;
+    text-align: center;
+
+    .scroll-down-btn {
+      margin: 0 auto;
+      display: block;
+      width: 60px;
+      color: $color-white;
+      background: $color-greena;
+      border-radius: 30px;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        background-color: $color-green;
+      }
+    }
+    .explore {
+      padding-top: 10px;
+      margin: 0;
+      font: 400 27px 'Droid Serif', serif;
+    }
+  }
+
+  .slogan {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 65%;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    transform: translate(-50%,-50%);
+
+    @media (max-width: 1200px) {
+      font-size: 60px;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 46px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 560px) {
+      font-size: 34px;
+
+      .nowrap {
+        white-space: normal;
+      }
+    }
+  }
+}

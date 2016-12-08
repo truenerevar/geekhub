@@ -1,0 +1,58 @@
+.team {
+  background: $color-blue;
+  color: $color-white;
+  padding: 12vh 0;
+  text-align: center;
+
+  .team-title {
+    color: $color-white;
+    margin-bottom: 10vh;
+    font: 700 $font-size-h2 $font-family-sans;
+  }
+
+  .team-set {
+    margin-top: 15vh;
+
+    li {
+      padding: 0 4vh 15px;
+
+      @media (min-width: 1200px) {
+        padding: 0 15px;
+      }
+
+      .team-icon {
+        max-width: 220px;
+        max-height: 220px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+      }
+
+      h3 {
+        color: $color-white;
+        margin: 5vh 0;
+      }
+
+      p {
+        margin: 0 auto 20px;
+        width: 68%;
+        line-height: 30px;
+      }
+
+      .social {
+        display: block;
+
+        li {
+          display: inline-block;
+          margin: 0 15px;
+          padding: 0;
+          border-radius: 30px;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            background: $color-green;
+          }
+        }
+      }
+    }
+  }
+}

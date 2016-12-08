@@ -1,0 +1,39 @@
+.main-footer {
+  padding: 4vh 0;
+  background: $dark-blue;
+
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+
+  .logo {
+    display: block;
+    padding: 2vh 0;
+  }
+
+  .address, .footer-wrap {
+    display: block;
+    padding: 15px 0;
+  }
+
+  a {
+    display: block;
+    color: $color-white;
+    font: 400 $font-size-small $font-family-sans;
+  }
+
+  .social-list {
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 0;
+      border-radius: 30px;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        background: $color-green;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.simple-design {
+  padding: 12vh 0;
+  color: $dark-blue;
+  background: $color-grey;
+
+  .design-title {
+    margin-bottom: 2%;
+  }
+
+  .design-text {
+    margin: 0 auto;
+    width: 94%;
+    color: $color-dark-grey;
+    line-height: 32px;
+  }
+}

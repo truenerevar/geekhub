@@ -1,0 +1,51 @@
+//
+// About
+// --------------------------------------------------
+
+.about {
+  background: $dark-blue;
+  color: $color-white;
+  padding: 12vh 0;
+  text-align: center;
+
+  .title {
+    color: $color-white;
+    margin-bottom: 10vh;
+    font: 700 $font-size-h2 $font-family-sans;
+  }
+
+  .about-text {
+    margin: 0 auto;
+    text-align: left;
+    width: 60%;
+    font-size: $font-size-about;
+    line-height: 32px;
+
+    @media (max-width: 767px) {
+      width: 90%;
+    }
+  }
+
+  .service-set {
+    margin-top: 15vh;
+
+    li {
+      padding: 0 4vh 15px;
+
+      @media (min-width: 1200px) {
+        padding: 0 15px;
+      }
+    }
+
+    h3 {
+      color: $color-white;
+      margin: 5vh 0;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 68%;
+      line-height: 30px;
+    }
+  }
+}

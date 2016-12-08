@@ -1,0 +1,90 @@
+//
+// Navigation
+// --------------------------------------------------
+
+.main-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2vh 0;
+  z-index: 101;
+  background: none;
+  transition: all 0.5s ease-in-out;
+
+  &.active-background {
+    background: $dark-blue;
+  }
+
+  .container {
+    padding: 0 97.5px;
+
+    @media (max-width: 1200px) {
+      padding: 0 81px;
+    }
+
+    @media (max-width: 991px) {
+      padding: 0 15px;
+    }
+  }
+
+  .logo {
+    display: inline-block;
+    width: 200px;
+  }
+
+  .menu-toggle {
+    color: #fff;
+    display: block;
+    width: 60px;
+    float: right;
+    padding-top: 8px;
+
+    @media (min-width: 767px) {
+      display: none;
+    }
+  }
+
+  .nav-menu {
+    display: inline-block;
+    float: right;
+    text-align: right;
+
+    @media (max-width: 767px) {
+      display: none;
+      width: 100%;
+      background: $dark-blue;
+      margin-top: 15px;
+    }
+
+    .link-item {
+      display: inline-block;
+      padding: 15px 5px;
+
+      @media (max-width: 767px) {
+        display: block;
+        text-align: center;
+      }
+
+      &.home {
+        display: none;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      a {
+        padding: 6px 20px;
+        color: $color-white;
+        border-radius: 20px;
+        transition: all 0.5s ease-in-out;
+
+        &.active,
+        &:hover {
+          background-color: $color-green;
+        }
+      }
+    }
+  }
+}

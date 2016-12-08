@@ -1,0 +1,47 @@
+// Variables
+//
+
+
+// Table of Contents
+//
+// Breakpoints
+// Colors
+// Body
+// Links
+// Fonts
+
+// Colors
+//
+
+$color-white:                #fff;
+$color-grey:                 #f6f9f9;
+$color-dark-grey:            #999;
+$dark-blue:                  #2d3950;
+$color-blue:                 #15a4fa;
+$color-black:                #000;
+
+
+// Body
+//
+// Settings for the `<body>` element
+
+$body-bg:                    $color-white;
+$body-color:                 $color-dark-grey;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more
+
+$font-family-base:          'Open Sans', sans-serif;
+$font-family-header:        'Open Sans', sans-serif;
+$font-family-lato:          'Lato', sans-serif;
+
+$font-size-base:             20px;
+$font-size-h1:               120px;
+$font-size-h2:               41px;
+$font-size-h3:               22px;
+$font-size-button:           18px;
+$font-size-small:            15px;
+
+$line-height:                1;

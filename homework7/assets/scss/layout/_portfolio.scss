@@ -1,0 +1,122 @@
+.portfolio {
+  background: #fff;
+  color: $dark-blue;
+  padding: 12vh 0;
+  text-align: center;
+
+  .portfolio-list {
+    padding: 0 0 15px;
+
+    li {
+      position: relative;
+      height: 256px;
+      overflow: hidden;
+      margin-top: 30px;
+
+      &:hover .overlay-content {
+        transform: translateY(-256px);
+      }
+
+      &:hover .overlay-text {
+        display: block;
+      }
+
+      .thumbnail {
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 256px;
+        width: 100%;
+      }
+
+      .pink-bg {
+        background-image: url('../img/pink-page.png')
+      }
+
+      .orange-bg {
+        background-image: url('../img/orange-page.png')
+      }
+
+      .east-bg {
+        background-image: url('../img/east-kitchen.png')
+      }
+
+      .alyoop-bg {
+        background-image: url('../img/alyoop-page.png')
+      }
+
+      .australia-bg {
+        background-image: url('../img/australia-page.png')
+      }
+
+      .action-bg {
+        background-image: url('../img/action-page.png')
+      }
+
+      .overlay-content {
+        margin: 0 auto;
+        height: 256px;
+        background: $dark-blue;
+        opacity: .8;
+        transition: transform 300ms;
+       }
+
+      .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0,-50%);
+        width: 100%;
+        color: $color-white;
+        display: none;
+
+        h4 {
+          margin-bottom: 50px;
+        }
+
+        .view-project {
+          padding: 5px 10px;
+          color: $color-white;
+          border: 2px solid $color-white;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+
+.portfolio-title {
+  padding: 4vh 0;
+  text-align: center;
+}
+
+.portfolio-nav {
+  display: block;
+  text-align: center;
+  margin-bottom: 4vh;
+
+  .portfolio-type {
+    display: inline-block;
+    padding: 15px 5px;
+    text-align: center;
+
+    a {
+      padding: 6px 20px;
+      color: $dark-blue;
+      border-radius: 20px;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-green;
+      }
+    }
+
+    .button:active,
+    .button.is-checked {
+      background-color: $color-green;
+      color: $color-white;
+    }
+  }
+}
