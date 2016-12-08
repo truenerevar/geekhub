@@ -27,9 +27,16 @@
       width: 100%;
     }
     .form-list {
+
+      input:focus:invalid,
+      textarea:focus:invalid {
+        box-shadow: 0 0 5px #d45252;
+        border-color: #b03535
+      }
+
       .form-input, textarea {
         margin: 2% 0;
-        padding: 25px 0;
+        padding: 25px 0 25px 15px;
         width: 100%;
         background: none;
         border: 1px solid $color-dark-grey;
@@ -65,6 +72,10 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
+
+        .label-check {
+          padding-left: 10px;
+        }
 
         .submit {
           padding: 10px 30px;
