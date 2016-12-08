@@ -1,5 +1,9 @@
 .idea/
 .gitignore
+<<<<<<< HEAD
 homework6/.sass-cache/
 homework7/node_modules
 homework8/node_modules
+=======
+homework6/.sass-cache/
+>>>>>>> 296e83c09df70436a5522cfc8f9193bf5499499d
