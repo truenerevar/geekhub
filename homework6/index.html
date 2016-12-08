@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>home-page</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link href="css/screen.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+    <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="authorization">
+        <ul class="reg-area">
+          <li class="login">
+            <a id="reg-trigger" href="#">
+              регистрация
+            </a>
+            <div id="reg-content">
+              <form action="#">
+                <fieldset class="inputs">
+                  <ul class="reg-list">
+                    <li><input id="first-name" type="text" name="first-name" placeholder="имя" required></li>
+                    <li><input id="last-name" type="text" name="last-name" placeholder="фамилия" required></li>
+                    <li><input id="email" type="email" name="email" placeholder="email" required></li>
+                    <li><input id="company" type="text" name="company" placeholder="компания" required></li>
+                    <li><input id="position" type="text" name="position" placeholder="должность" required></li>
+                  </ul>
+                </fieldset>
+                <input id="submit-registration" class="reg-submit" type="submit" value="⮠">
+              </form>
+              <div class="wrapper-avatar">
+                <img class="avatar" src="img/avatar.png" alt="avatar">
+                <a class="dl-photo" href="#">загрузить фото</a>
+              </div>
+            </div>
+          </li>
+          <li class="login">
+            <a id="login-trigger" href="#">
+              вход
+            </a>
+            <div id="login-content">
+              <form action="#">
+                <fieldset class="inputs">
+                  <a class="forgot-password" href="#">забыли пароль?</a>
+                  <ul class="authorization-input">
+                    <li><input id="username" type="email" name="Email" placeholder="логин" required></li>
+                    <li><input id="password" type="password" name="Password" placeholder="*****" required></li>
+                    <li><input id="submit-authorization" class="submit-authorization" type="submit" value="⮠"></li>
+                  </ul>
+                </fieldset>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <h1>
+        <a href="#">
+          <img class="logo" src="img/logo.png" alt="logo">
+          <span class="sub-logo">managers to managers</span>
+        </a>
+      </h1>
+      <p class="community">Сообщество IT-компаний города Черкассы</p>
+    </header>
+    <nav class="main-nav">
+      <ul class="btn">
+        <li class="home-page-button-active"><a class="active-btn" href="#">главная</a></li>
+        <li class="goal-button"><a href="goal-page.html">цель проекта</a></li>
+        <li class="company-button"><a href="company-page.html">компании</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="sidebar">
+        <h2 class="head">Категории</h2>
+        <ul class="side-nav">
+          <li><a href="#">CMS</a></li>
+          <li><a href="#">Design Patterns</a></li>
+          <li><a href="#">CMS</a></li>
+          <li><a href="#">Design Patterns</a></li>
+          <li><a href="#">CMS</a></li>
+          <li><a href="#">Design Patterns</a></li>
+        </ul>
+        <div class="rss-wrapper">
+          <a class="rss" href="#"><i class="fa fa-rss" aria-hidden="true"></i> RSS</a>
+        </div>
+        <ul class="side-links">
+          <li><a href="#"><img src="img/moc.png" alt="master-of-code"></a></li>
+          <li><a href="#"><img src="img/fp.png" alt="forma-pro"></a></li>
+          <li><a href="#"><img src="img/il.png" alt="inter-link"></a></li>
+          <li><a href="#"><img src="img/wc.png" alt="web-ceh"></a></li>
+          <li><a href="#"><img src="img/as.png" alt="alt-soft-a"></a></li>
+        </ul>
+      </aside>
+      <main class="main-content">
+        <ul class="home-pages">
+          <li>
+          <article class="post-body">
+          <h2 class="content-header">Кризис и IT</h2>
+            <header class="post-head">
+              <p>Автор:<a href="#" rel="author">Руслан Пилин</a></p>
+              <p>Категории:<a href="#">Рынок труда</a>, <a href="#">Дзен</a></p>
+              <time>2009-02-09</time>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsa odit omnis recusandae veritatis! Accusamus architecto blanditiis deleniti dolorem eius expedita facere harum hic impedit, incidunt officia provident ullam voluptates?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsa odit omnis recusandae veritatis! Accusamus architecto blanditiis deleniti dolorem eius expedita facere harum hic impedit, incidunt officia provident ullam voluptates? <a href="#">Читать далее »»</a></p>
+            <footer>
+              <p class="vote"><span class="grey-vote">3 голосов <a href="#">24 Коментария »</a></span></p>
+            </footer>
+          </article>
+          </li>
+          <li>
+            <article class="post-body">
+            <h2 class="content-header">Кризис и IT</h2>
+              <header class="post-head">
+                <p>Автор:<a href="#" rel="author">Руслан Пилин</a></p>
+                <p>Категории:<a href="#">Рынок труда</a>, <a href="#">Дзен</a></p>
+                <time>2009-02-09</time>
+              </header>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsa odit omnis recusandae veritatis! Accusamus architecto blanditiis deleniti dolorem eius expedita facere harum hic impedit, incidunt officia provident ullam voluptates?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsa odit omnis recusandae veritatis! Accusamus architecto blanditiis deleniti dolorem eius expedita facere harum hic impedit, incidunt officia provident ullam voluptates? <a href="#">Читать далее »»</a></p>
+              <footer>
+                <p class="vote"><span class="grey-vote">3 голосов <a href="#">24 Коментария »</a></span></p>
+              </footer>
+            </article>
+          </li>
+          <li>
+            <article class="post-body">
+            <h2 class="content-header">Кризис и IT</h2>
+              <header class="post-head">
+                <p>Автор:<a href="#" rel="author">Руслан Пилин</a></p>
+                <p>Категории:<a href="#">Рынок труда</a>, <a href="#">Дзен</a></p>
+                <time>2009-02-09</time>
+              </header>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsa odit omnis recusandae veritatis! Accusamus architecto blanditiis deleniti dolorem eius expedita facere harum hic impedit, incidunt officia provident ullam voluptates?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsa odit omnis recusandae veritatis! Accusamus architecto blanditiis deleniti dolorem eius expedita facere harum hic impedit, incidunt officia provident ullam voluptates? <a href="#">Читать далее »»</a></p>
+              <footer>
+                <p class="vote"><span class="grey-vote">3 голосов <a href="#">24 Коментария »</a></span></p>
+              </footer>
+                <a class="prev-rec" href="#">предыдущие записи</a>
+            </article>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <footer class="main-footer">
+      <div class="footer-wrapper">
+        <p>© 2010 MOC  Сайт работает на <span class="text-black">WordPress</span></p>
+        <a href="#"><img src="img/sub-moc.png" alt="master-of-code"></a>
+      </div>
+    </footer>
+  </body>
+</html>
