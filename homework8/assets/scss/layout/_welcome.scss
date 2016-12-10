@@ -7,6 +7,10 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+  @media (max-height: 350px) {
+    justify-content: flex-start;
+    padding-top: 30px;
+  }
 
   .slogan-header {
     margin-top: 0;
