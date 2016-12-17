@@ -1,0 +1,43 @@
+// Variables
+//
+
+
+// Table of Contents
+//
+// Breakpoints
+// Colors
+// Body
+// Links
+// Fonts
+
+// Colors
+//
+
+$color-white:                #fff;
+$color-grey:                 #f6f6f6;
+$color-dark-grey:            #3f3f44;
+$color-yellow:               #ffeb00;
+$color-black:                #000;
+$color-text:                 #424147;
+
+// Body
+//
+// Settings for the `<body>` element
+
+$body-bg:                    $color-white;
+$body-color:                 $color-grey;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more
+
+$font-family-base:          'CenturyGothic', sans-serif;
+$font-family-header:        'Code-Light', sans-serif;
+
+$font-size-base:             13px;
+$font-size-h1:               70px;
+$font-size-h2:               35px;
+$font-size-h3:               18px;
+
+$line-height:                1;

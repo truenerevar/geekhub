@@ -1,0 +1,42 @@
+.main-footer {
+  padding: 3vh 0;
+  background: $color-black;
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 992px) {
+      flex-flow: wrap;
+      justify-content: center;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 14px;
+      @media (max-width: 992px) {
+        margin-bottom: 20px;
+      }
+    }
+    .footer-menu {
+      display: flex;
+      justify-content: space-between;
+      li {
+        padding: 0 30px;
+        @media (max-width: 991px) {
+          padding: 0 15px;
+        }
+        @media (max-width: 767px) {
+          padding: 0 5px;
+        }
+        a {
+          color: $color-white;
+          font-size: 16px;
+          white-space: nowrap;
+          transition: all 0.5s ease-in-out;
+          &:hover {
+            color: $color-yellow;
+          }
+        }
+      }
+    }
+  }
+}

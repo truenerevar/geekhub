@@ -1,0 +1,81 @@
+.main-header {
+  padding: 3vh 0;
+  background: $color-grey;
+  @media (max-width: 991px) {
+    padding: 0;
+  }
+  .logo {
+    font-size: 8vh;
+    display: inline-block;
+    width: 200px;
+    float: left;
+    img {
+      @media (max-width: 767px) {
+        width: 80px;
+      }
+    }
+  }
+
+  .menu-toggle {
+    color: #000;
+    display: block;
+    width: 60px;
+    float: right;
+    padding-top: 25px;
+
+    @media (min-width: 767px) {
+      display: none;
+    }
+  }
+
+  .menu {
+    display: inline-block;
+    float: right;
+    text-align: right;
+
+    @media (max-width: 767px) {
+      display: none;
+      width: 100%;
+      background: $color-grey;
+      margin-top: 15px;
+    }
+
+    li {
+      padding: 50px 30px 0 30px;
+      display: inline-block;
+
+      @media (max-width: 767px) {
+        display: block;
+        text-align: center;
+        padding: 25px 0 0 0;
+      }
+
+      @media (max-width: 991px) {
+        padding: 50px 0 0 0;
+      }
+
+      &:last-child {
+        padding-bottom: 50px;
+      }
+
+      &:hover a, .active {
+        background: $color-yellow;
+
+        @media (max-width: 767px) {
+          background: transparent;
+          color: $color-yellow;
+        }
+      }
+
+      a {
+        transition: all .5s ease-in-out;
+        color: $color-black;
+        padding: 30px 10px;
+
+        @media (max-width: 767px) {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
