@@ -1,47 +1,42 @@
 $(document).ready(function() {
 
-    //flex slider
     $('.flexslider').flexslider({
         animation: "slide"
     });
-    //flex-carusel
-    (function() {
 
-        // store the slider in a local variable
-        var $window = $(window),
-            flexslider = { vars:{} };
 
-        // tiny helper function to add breakpoints
-        function getGridSize() {
-            return (window.innerWidth < 600) ? 1 :
-                (window.innerWidth < 900) ? 3 : 8;
-        }
+    // store the slider in a local variable
+    var $window = $(window),
+        flexslider = { vars:{} };
 
-        $(function() {
-            SyntaxHighlighter.all();
+    // tiny helper function to add breakpoints
+    function getGridSize() {
+        return (window.innerWidth < 600) ? 1 : (window.innerWidth < 900) ? 3 : (window.innerWidth < 1400) ? 5 : 8;
+    }
+
+    $(function() {
+        SyntaxHighlighter.all();
+    });
+
+    $window.load(function() {
+        $('.flexslider-2').flexslider({
+            animation: "slide",
+            animationLoop: true,
+            move: 1,
+            itemWidth: 125,
+            slideshowSpeed: 5000,
+            minItems: getGridSize(), // use function to pull in initial value
+            maxItems: getGridSize() // use function to pull in initial value
         });
+    });
 
-        $window.load(function() {
-            $('#flex').flexslider({
-                animation: "slide",
-                animationLoop: false,
-                itemWidth: 100,
-                itemMargin: 5,
-                maxItems: 8,
-                move: 1,
-                minItems: getGridSize(), // use function to pull in initial value
-                maxItems: getGridSize() // use function to pull in initial value
-            });
-        });
+    // check grid size on resize event
+    $window.resize(function() {
+        var gridSize = getGridSize();
 
-        // check grid size on resize event
-        $window.resize(function() {
-            var gridSize = getGridSize();
-
-            flexslider.vars.minItems = gridSize;
-            flexslider.vars.maxItems = gridSize;
-        });
-    }());
+        flexslider.vars.minItems = gridSize;
+        flexslider.vars.maxItems = gridSize;
+    });
 
     //masonry
     $('.grid').masonry({

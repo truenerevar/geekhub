@@ -24,12 +24,14 @@
       text-align: center;
     }
     .photo-stream {
+      font-size: 0;
       @media (max-width: 1200px) {
         display: block;
         text-align: center;
       }
       li {
         display: inline-block;
+
       }
     }
   }

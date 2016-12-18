@@ -35,7 +35,7 @@
     margin-bottom: 5vh;
   }
   .grid {
-    max-width: 2000px;
+    //max-width: 2000px;
     .grid:after {
       content: '';
       display: block;
@@ -47,9 +47,8 @@
         width: 100%;
       }
     }
-    .grid-item--width1 { width: 268px; }
-    .grid-item--width2 { width: 275px; }
-    .grid-item--width3 { width: 265px; }
-    .grid-item--width4 { width: 534px; }
+    .grid-item--width2 { width: 17%; }
+    .grid-item--width3 { width: 16%; }
+    .grid-item--width4 { width: 33%; }
   }
 }
