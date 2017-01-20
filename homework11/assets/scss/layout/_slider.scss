@@ -1,0 +1,165 @@
+.flexslider {
+  border: none;
+  position: relative;
+  margin: 0;
+
+  &:hover {
+    .flex-direction-nav .flex-prev {
+      left: 0;
+    }
+
+    .flex-direction-nav .flex-next {
+      right: 0;
+    }
+  }
+}
+
+.flex-prev,
+.flex-next {
+  font-size: 0;
+}
+
+.flex-direction-nav {
+
+  .flex-prev {
+    left: 0;
+  }
+
+  .flex-next {
+    right: 0;
+  }
+}
+.main-slider {
+  .slides > li {
+    background-image: url('../img/slider_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 17%;
+    height: calc(100vh - 24vh);
+  }
+
+  .flex-direction-nav a {
+    width: 46px;
+    height: 106px;
+    padding-left: 15px;
+    background-color: $color-black-bg;
+    opacity: 1 !important;
+    text-shadow: none;
+    z-index: 100;
+
+    &:active, &:focus, &:hover, &:link {
+      color: white;
+    }
+
+    &:before {
+      line-height: 100px;
+      font-size: 25px;
+      font-family: 'FontAwesome', sans-serif;
+      color: white;
+      content: '\f104';
+      opacity: 1;
+      text-indent: 0;
+    }
+
+    &.flex-next:before {
+      padding-right: 15px;
+      content: '\f105';
+    }
+  }
+}
+
+.slider-content {
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+  @media (max-width: 768px) {
+    display: none;
+  }
+  .banner-content {
+    max-width: 458px;
+    h1 {
+      background-color: #ffac56;
+      padding: 34px 9%;
+      margin-bottom: 0;
+      text-align: left;
+      span {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+    ul {
+      margin-bottom: 0;
+      display: flex;
+      flex-flow: column wrap;
+      max-height: 220px;
+      li {
+        background-color: #03b6e7;
+        width: 50%;
+        border-top: 1px solid #00a6d3;
+        border-right: 1px solid #00a6d3;
+        transition: background .5s ease-in-out;
+        &:hover {
+          background-color: $color-blue-hover;
+          a:after {
+            background: url("../img/arrow-img2.png") no-repeat right bottom;
+          }
+        }
+        a {
+          position: relative;
+          display: block;
+          padding: 10px 25% 0px 17%;
+          color: #fff;
+          &:after {
+            content: "";
+            background: url("../img/arrow-img.png") no-repeat right bottom;
+            width: 26px;
+            height: 26px;
+            display: block;
+            position: absolute;
+            right: 20px;
+            bottom: 4px;
+          }
+          i {
+            width: 35px;
+            height: 33px;
+            display: block;
+            margin-bottom: 7px;
+          }
+          span {
+            font-size: 14px;
+            display: block;
+            @media (max-width: 768px) {
+              font-size: 10px;
+            }
+          }
+        }
+        .button-after {
+          &:after {
+            width: 0;
+            height: 0;
+          }
+        }
+        .button-wrap {
+          padding: 16px 0 16px 0;
+          text-align: center;
+        }
+        .green-button {
+          padding: 8px 20px;
+          display: inline-block;
+          color: #fff;
+          background-color: $color-green;
+          border: 1px solid $color-green;
+          border-radius: 25px;
+          transition: background .3s ease-in-out;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

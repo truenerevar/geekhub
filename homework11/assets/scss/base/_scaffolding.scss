@@ -1,0 +1,150 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+// Body reset
+// -------------------------
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $base-font;
+  font-size: $base-font-size;
+  color: $color-black-text;
+  background-color: $color-body-bg;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+// Clear outline border
+// -------------------------
+
+*:focus {
+    outline: none;
+}
+
+
+//
+// Typography
+// --------------------------------------------------
+
+
+h1 {
+	margin: 35px 0;
+	line-height: 1;
+	text-align: center;
+	color: white;
+	font-family: $h1-font;
+	font-size: $h1-font-size;
+
+	span {
+		font-size: $medium-font-size;
+		font-family: $base-font;
+	}
+}
+
+h2 {
+  font-size: $h2-font-size;
+  line-height: 1;
+
+  .top-head {
+    font-size: $medium-font-size;
+    color: $color-grey-heading;
+    display: block;
+  }
+}
+
+h3 {
+	font-size: $h3-font-size;
+  font-weight: bold;
+
+  .top-head {
+    display: block;
+    color: $color-green;
+  }
+}
+
+.footer-title {
+	font-size: $h3-footer-font-size;
+}
+
+h4 {
+	font-size: $medium-font-size;
+}
+
+h1, h2, h3, h4, a {
+	text-transform: uppercase;
+}
+
+p {
+	font-family: $text-font;
+}
+
+// MISC
+//---------------------------------
+
+section {
+  padding: 10vh 0;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black-text;
+
+  &:hover, &:active, &:focus, &:link {
+    text-decoration: none;
+    color: $color-black-text;
+  }
+}
+
+.green-button {
+  padding: 8px 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  background-color: $color-green;
+  border: 1px solid $color-green;
+  border-radius: 25px;
+  transition: background .3s ease-in-out;
+  &:active, &:focus, &:link {
+    color: white;
+  }
+  &:hover {
+    background-color: transparent;
+    color: $color-green;
+  }
+}
+
+.tag {
+  padding: 5px 30px;
+  font-size: $tag-font-size;
+  border: 2px solid $color-orange;
+  border-radius: 25px;
+}
+
+.education {
+  background: url("../img/icon_education.png");
+}
+.business {
+  background: url("../img/icon_business.png");
+}
+.technology {
+  background: url("../img/icon_technology.png");
+}
+.estate {
+  background: url("../img/icon_real estate.png");
+}
+.banking {
+  background: url("../img/icon_banking.png");
+}
+
+.education,
+.business,
+.technology,
+.estate,
+.banking {
+  background-repeat: no-repeat;
+}

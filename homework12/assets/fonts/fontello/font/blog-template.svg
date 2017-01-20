@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
+<defs>
+<font id="blog-template" horiz-adv-x="1000" >
+<font-face font-family="blog-template" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="search" unicode="&#xe800;" d="M680 256c-55-55-126-83-197-83-65 0-129 23-182 66l-51-125-130-130c-14-10-29-15-45-15-41 0-75 37-75 77 0 16 5 32 15 45l129 130 126 51c-44 52-66 117-66 182 0 152 127 277 279 277 150 0 277-128 277-278 0-72-26-144-80-197z m-319 75c34-33 78-50 122-50 92 0 170 77 170 172 0 93-79 170-170 170-94 0-172-79-172-170 0-45 17-89 50-122z" horiz-adv-x="760" />
+
+<glyph glyph-name="dot-3" unicode="&#xe801;" d="M110 460q46 0 78-32t32-78q0-44-32-77t-78-33-78 33-32 77q0 46 32 78t78 32z m350 0q46 0 78-32t32-78q0-44-33-77t-77-33-77 33-33 77q0 46 32 78t78 32z m350 0q46 0 78-32t32-78q0-44-32-77t-78-33-78 33-32 77q0 46 32 78t78 32z" horiz-adv-x="920" />
+
+<glyph glyph-name="angle-left" unicode="&#xf104;" d="M350 546q0-7-6-12l-219-220 219-219q6-6 6-13t-6-13l-28-28q-5-5-12-5t-13 5l-260 261q-6 5-6 12t6 13l260 260q5 6 13 6t12-6l28-28q6-5 6-13z" horiz-adv-x="357.1" />
+
+<glyph glyph-name="angle-right" unicode="&#xf105;" d="M332 314q0-7-5-12l-261-261q-5-5-12-5t-13 5l-28 28q-6 6-6 13t6 13l219 219-219 220q-6 5-6 12t6 13l28 28q5 6 13 6t12-6l261-260q5-5 5-13z" horiz-adv-x="357.1" />
+</font>
+</defs>
+</svg>

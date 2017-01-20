@@ -1,0 +1,105 @@
+.main-content {
+  background-color: $color-grey;
+  @media (max-width: 768px) {
+    padding: 0 50px;
+  }
+  .content-list {
+    li {
+      margin-bottom: 40px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+        .image-wrap {
+          position: relative;
+        }
+        .overlay-content {
+          position: absolute;
+          padding: 0 15px;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          color: #fff;
+          flex-flow: column nowrap;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          @media (max-width: 768px) {
+            font-size: 26px;
+            justify-content: flex-start;
+          }
+          p {
+            align-self: center;
+            margin: 0;
+          }
+          .huge-txt {
+            font-size: 48px;
+            @media (max-width: 768px) {
+              font-size: 26px;
+            }
+          }
+          .huge-sub {
+            @media (max-width: 768px) {
+              font-size: 13px;
+            }
+          }
+        }
+
+      p {
+        font-size: 16px;
+        align-self: flex-start;
+        @media (max-width: 768px) {
+          align-self: center;
+        }
+      }
+      span {
+        align-self: flex-end;
+        @media (max-width: 992px) {
+          align-self: center;
+          font-size: 15px;
+        }
+        @media (max-width: 768px) {
+          align-self: center;
+          font-size: 15px;
+        }
+        span {
+          a {
+            color: $color-blue;
+          }
+        }
+      }
+    }
+  }
+
+}
+.huge-box {
+
+  padding-bottom: 26px;
+  text-align: center;
+
+
+  h1 {
+    position: absolute;
+    top: 90px;
+    line-height: 36px;
+    z-index: 1;
+
+    span {
+      font-size: $base-font-size;
+    }
+  }
+
+  .post-date {
+    color: white;
+    position: absolute;
+    right: 45px;
+    bottom: 50px;
+  }
+
+
+}
+.tag {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}

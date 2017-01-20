@@ -1,0 +1,54 @@
+.portfolio {
+  padding: 3vh 0;
+  background: $color-grey;
+  .clients-work-title {
+    margin-bottom: 4vh;
+    padding: 10px 30px;
+    position: relative;
+    display: inline-block;
+    color: $color-yellow;
+    background: $color-dark-grey;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 18px;
+      width: 100vw;
+      height: 1px;
+      background-color: #cacaca;
+      border: solid $color-grey;
+      border-width: 0 40px;
+    }
+
+    &:before {
+      left: -100vw;
+    }
+
+    &:after {
+      right: -100vw;
+    }
+  }
+  .portfolio-text {
+    color: #424146;
+    font-size: 16px;
+    margin-bottom: 5vh;
+  }
+  .grid {
+    //max-width: 2000px;
+    .grid:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .grid-item {
+      padding: 1px;
+      img {
+        width: 100%;
+      }
+    }
+    .grid-item--width2 { width: 17%; }
+    .grid-item--width3 { width: 16%; }
+    .grid-item--width4 { width: 33%; }
+  }
+}

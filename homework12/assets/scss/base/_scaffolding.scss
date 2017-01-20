@@ -1,0 +1,146 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+//
+// Body
+//// -------------------------
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font-family-serif;
+  font-size: $base-font-size;
+  color: $color-text;
+  background-color: #f6f6f6;
+  min-width: 320px;
+  overflow-x: hidden;
+
+  img {
+    max-width: 100%;
+  }
+
+}
+
+section {
+  padding: 5vh 0;
+}
+
+// Clear outline border
+// -------------------------
+
+*:focus {
+  outline: none;
+}
+
+//
+// Typography
+// --------------------------------------------------
+
+
+// Headings
+// -------------------------
+
+h1 {
+  font-size: $h1-font-size;
+  color: $color-h1;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+
+// Body text
+// -------------------------
+
+p {
+  font-size: $base-font-size;
+  margin-bottom: 1rem;
+}
+
+strong,
+.text-bold {
+  font-weight: 700;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+  color: $color-text;
+
+  &:hover, &:active, &:focus, &:link {
+    text-decoration: none;
+    color: $color-text;
+  }
+}
+
+// MISC
+//---------------------------------
+
+.post-date {
+  color: $color-dark-grey;
+  font-size: $post-date-size;
+
+  a {
+    color: $color-blue;
+    text-decoration: underline;
+  }
+}
+
+.box-text {
+  margin: 25px 0;
+}
+
+.tag,
+.slider-tag {
+  font-family: $font-family-sans;
+  color: white;
+
+  &:hover, &:active, &:focus, &:link {
+    color: white;
+  }
+
+  &:before {
+    padding: 8px 20px;
+  }
+}
+.people-tag {
+  &:before {
+    content: 'People';
+    background-color: $color-blue;
+  }
+}
+.tech-tag {
+  &:before {
+    content: 'Tech';
+    background-color: $color-tech-bg;
+  }
+}
+.nature-tag {
+  &:before {
+    content: 'Nature';
+    background-color: $color-nature-bg;
+  }
+}
+.trips-tag {
+  &:before {
+    content: 'Trips';
+    background-color: $color-trips-bg;
+  }
+}
+.fashion-tag {
+  &:before {
+    content: 'Fashion';
+    background-color: $color-fashion-bg;
+  }
+}

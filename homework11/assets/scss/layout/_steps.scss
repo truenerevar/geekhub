@@ -1,0 +1,32 @@
+.steps {
+  background-color: $color-grey-bg;
+
+  h2 {
+      padding-bottom: 20px;
+  }
+}
+
+.our-steps {
+  li {
+    padding-top: 80px;
+    background-repeat: no-repeat;
+    background-position-x: 17px;
+    text-align: left;
+    @media (max-width: 992px) {
+      background-position: center top;
+      text-align: center;
+    }
+  }
+}
+
+.step-industry {
+  background-image: url("../img/industry.png");
+}
+
+.step-service {
+  background-image: url("../img/service.png");
+}
+
+.step-business {
+  background-image: url("../img/business.png");
+}

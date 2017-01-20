@@ -1,0 +1,80 @@
+.main-header {
+  .header-contacts {
+    padding: 2vh 0px;
+    text-align: right;
+    @media (max-width: 768px) {
+      text-align: left;
+    }
+    background: $color-black-bg;
+    a {
+      padding: 20px;
+      color: $color-body-bg;
+      text-transform: uppercase;
+      @media (max-width: 768px) {
+        padding: 10px;
+        font-size: 10px;
+      }
+      @media (max-width: 768px) {
+        padding: 0;
+        font-size: 9px;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+      span {
+        color: $color-grey-heading;
+      }
+    }
+  }
+  nav {
+    padding: 5vh 0px;
+    .menu-toggle {
+      color: $color-black-text;
+      display: block;
+      width: 60px;
+      float: right;
+      padding-top: 8px;
+
+      @media (min-width: 767px) {
+        display: none;
+      }
+    }
+    .navlist {
+      padding: 2vh 0;
+      float: right;
+      @media (max-width: 767px) {
+        display: none;
+        width: 100%;
+        margin-top: 15px;
+      }
+      li {
+        padding: 0 15px;
+        display: inline-block;
+        &:last-child {
+          padding-right: 0;
+        }
+        @media (max-width: 1200px) {
+          padding: 0px 5px;
+        }
+        @media (max-width: 767px) {
+          display: block;
+          text-align: center;
+          padding: 15px;
+          &:last-child {
+            padding-right: 15px;
+          }
+        }
+        a {
+          transition:all .3s ease-in-out;
+          &:hover ,
+          &.active {
+            color: $color-orange;
+          }
+          i {
+
+          }
+        }
+      }
+    }
+  }
+}

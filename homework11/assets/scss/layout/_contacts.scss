@@ -1,0 +1,39 @@
+.contacts {
+  clear: both;
+  h2 {
+    padding-bottom: 33px;
+  }
+}
+
+.contacts-list {
+  li {
+    margin: 20px 15px;
+    padding: 20px 0 40px;
+    padding-left: 125px;
+    background-position: 34px 27px;
+    background-repeat: no-repeat;
+    border: 1px solid $color-grey-bg;
+    width: 70%;
+    @media (max-width: 922px) {
+      margin: 20px auto;
+    }
+
+  p {
+      text-transform: none;
+    }
+
+    @media (min-width: 992px) {
+      width: 30%;
+    }
+  }
+}
+
+.mail-us {
+  background-image: url("../img/icon_email.png");
+}
+.call-us {
+  background-image: url("../img/icon_call.png");
+}
+.our-careers {
+  background-image: url("../img/icon_career.png");
+}

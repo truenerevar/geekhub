@@ -21,7 +21,11 @@ gulp.task('scripts', function() {
 		'./assets/libs/jquery/jquery-1.12.1.min.js',
 		'./assets/libs/plugins-scroll/plugins-scroll.js',
 		'./assets/libs/flexslider/jquery.flexslider-min.js',
-		'./assets/libs/masonry/masonry.pkgd.min.js'
+		'./assets/libs/masonry/masonry.pkgd.min.js',
+		'./assets/libs/isotope/isotope.pkgd.min.js',
+		'./assets/libs/fancybox/jquery.fancybox.pack.js',
+		'./assets/libs/waypoint/jquery.waypoints.js',
+		'./assets/libs/countto/jquery.countTo.js'
 		])
 		.pipe(concat('libs.js'))
 		.pipe(uglify())
@@ -30,7 +34,7 @@ gulp.task('scripts', function() {
 
 gulp.task('watch', function () {
 	gulp.watch('assets/scss/**/*.scss', ['styles']);
-	gulp.watch('assets/js/libs.js', ['scripts']);
+	gulp.watch('gulpfile.js', ['scripts']);
 });
 
 gulp.task('default', ['watch']);

@@ -35,7 +35,12 @@
     margin-bottom: 5vh;
   }
 
-  .flexslider-2 {
+  .flexslider {
+    border: none;
+    background: none;
+    .flex-control-nav {
+      display: none;
+    }
     .slides {
       li {
         text-align: center;
@@ -50,66 +55,40 @@
     .flex-viewport {
       margin: 0 auto;
     }
-  }
-  .flexslider-2 {
-    margin: 0;
-    padding: 0;
-  }
-  .flexslider-2 .slides > li {
-    display: none;
-    -webkit-backface-visibility: hidden;
-  }
-  .flexslider-2 .slides img {
-    //width: 100%;
-    //display: block;
-  }
-  .flexslider-2 .slides:after {
-    content: "\0020";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-  }
-  .flexslider-2 {
-    margin: 0 0 60px;
-    position: relative;
-    zoom: 1;
-    border-radius: 4px;
-  }
-  .flexslider-2 .slides {
-    zoom: 1;
-  }
-  .flexslider-2 .slides img {
-    height: auto;
-    -moz-user-select: none;
-  }
-  .flex-direction-nav .flex-prev {
-    width: 45px;
-    height: 40px;
-    left: 0;
-    opacity: 1;
-    &:before {
-      content: '';
+    .flex-direction-nav .flex-prev {
       width: 45px;
-      height: 40px;
-      background: url('../img/img-sprite.png') -15px -45px;
+      height: 65px;
+      top: 32%;
+      left: 0;
+      opacity: 1;
+      background: black;
+      &:before {
+        width: 45px;
+        height: 65px;
+        content: '\f104';
+        font-family: 'fontello', sans-serif;
+        color: white;
+        transform: translate(0,15%);
+      }
     }
-  }
-  .flex-direction-nav .flex-next {
-    width: 48px;
-    height: 40px;
-    right: 0;
-    opacity: 1;
-    &:before {
-      content: '';
-      width: 48px;
-      height: 40px;
-      background: url("../img/img-sprite.png");
-      background-position: -58px -44px;
+    .flex-direction-nav .flex-next {
+      width: 45px;
+      height: 65px;
+      top: 32%;
+      right: 0;
+      opacity: 1;
+      background: black;
+      &:before {
+        width: 45px;
+        height: 65px;
+        content: '\f105';
+        font-family: 'fontello', sans-serif;
+        color: white;
+        transform: translate(-25%,15%);
+      }
     }
-  }
-  .flex-control-nav {
-    display: none;
+    .flex-control-nav {
+      display: none;
+    }
   }
 }

@@ -1,0 +1,16 @@
+// styles reset and third party libs
+@import 'vendors/reset';
+@import 'vendors/bootstrap-grid';
+
+// variables, fonts, mixins, helpers... common styles used across the entire site
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/scaffolding';
+
+// declarations specific to the project, organized according to the sections represented
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/welcome';
+@import 'layout/health';
+@import 'layout/info';
+@import 'layout/footer';

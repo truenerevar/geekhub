@@ -1,0 +1,197 @@
+.project-content {
+  padding: 90px 0;
+}
+.project-main {
+  text-align: left;
+  .flexslider-project {
+    border: none;
+    margin: 0;
+    .slides {
+      li {
+        background: $color-dark-grey;
+        padding: 5px 0;
+        img {
+          width: auto;
+          margin: 0 auto;
+        }
+      }
+    }
+    .flex-direction-nav {
+      .flex-nav-prev {
+        .flex-prev {
+          width: 50px;
+          height: 100px;
+          opacity: 1;
+          background: black;
+          top: 50%;
+          left: 0;
+          transform: translate(0,-50%);
+          &:before {
+            content: '\f104';
+            font-family: 'fontello', sans-serif;
+            color: white;
+            width: 50px;
+            height: 100px;
+            transform: translate(25%,25%);
+          }
+        }
+      }
+    }
+    .flex-nav-next {
+      .flex-next {
+        width: 50px;
+        height: 100px;
+        top: 50%;
+        right: 0;
+        transform: translate(0,-50%);
+        opacity: 1;
+        background: black;
+        &:before {
+          width: 50px;
+          height: 100px;
+          content: '\f105';
+          font-family: 'fontello', sans-serif;
+          color: white;
+          transform: translate(-25%,25%);
+        }
+      }
+    }
+  }
+  #carousel {
+    padding: 0 50px;
+    border: none;
+    background: $color-black;
+    .flex-active-slide {
+      border: 2px solid $color-yellow;
+      position: relative;
+      .overlay-carousel {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        background: $color-yellow;
+        left: 0;
+        top: 0;
+        opacity: .6;
+      }
+    }
+    li {
+      width: auto!important;
+      margin: 5px!important;
+      overflow: hidden;
+    }
+    .flex-direction-nav {
+      display: none;
+    }
+  }
+  p {
+    color: $color-text;
+    font-size: 15px;
+    text-align: left;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  .last-paragraph {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-dark-grey;
+    margin-bottom: 40px;
+  }
+  .sub-head {
+    margin-bottom: 40px;
+  }
+  .project-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      width: 32%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.project-aside {
+  text-align: left;
+  .details {
+    padding: 35px;
+    background: $color-dark-grey;
+    margin-bottom: 35px;
+    .details-list {
+      li {
+        margin-bottom: 30px;
+        font-size: 16px;
+        text-transform: uppercase;
+        position: relative;
+        padding-left: 50px;
+        &:before {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translate(0,-50%);
+          font-size: 25px;
+          color: $color-dark-grey;
+          background: $color-yellow;
+          margin-right: 10px;
+          width: 31px;
+          height: 31px;
+        }
+        a {
+          color: $color-white;
+        }
+      }
+    }
+  }
+  .popular {
+    padding: 35px;
+    background: $color-dark-grey;
+    margin-bottom: 35px;
+    .popular-list {
+      li {
+        margin-bottom: 20px;
+        position: relative;
+        img {
+          display: inline-block;
+          width: 33%;
+          height: auto;
+          padding-right: 10px;
+          margin-right: 6px;
+          vertical-align: top;
+        }
+        .popular-content {
+          text-align: right;
+          display: inline-block;
+          width: 62%;
+        }
+        a {
+          color: $color-yellow;
+        }
+        p {
+          text-align: left;
+          color: $color-white;
+          text-transform: uppercase;
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .tags {
+    padding: 35px;
+    background: $color-dark-grey;
+    .tags-list {
+      font-size: 0;
+      li {
+        display: inline-block;
+        background: $color-yellow;
+        padding: 7px 10px;
+        margin: 2px;
+        font-size: 16px;
+        text-transform: uppercase;
+        a {
+          color: $color-dark-grey;
+        }
+      }
+    }
+  }
+}

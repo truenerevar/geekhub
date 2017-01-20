@@ -2,6 +2,21 @@
 // Scaffolding
 // --------------------------------------------------
 
+// Button
+// --------------------------------------------------
+.btn {
+  margin-top: 30px;
+  display: inline-block;
+  color: $color-white;
+  font-size: 15px;
+  padding: 12px 18px;
+  background-color: $color-black;
+  border-bottom: 3px solid #ffea00;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    color: $color-yellow;
+  }
+}
 
 // Body reset
 // -------------------------
@@ -61,6 +76,40 @@ h3 {
   color: $color-yellow;
 }
 
+.sub-head {
+  display: inline-block;
+  padding: 1vh 3vh;
+  font-size: 18px;
+  color: $color-yellow;
+  background: $color-dark-grey;
+  text-transform: uppercase;
+}
+
+.aside-header {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color-yellow;
+  margin-bottom: 30px;
+}
+.welcome-block {
+  background: url("../img/slider-bg.png");
+  padding: 2vh;
+  text-align: left;
+  @media (max-width:1600px ){
+    padding: 1vh;
+  }
+}
+.other-header {
+  display: inline-block;
+  padding: 2vh 10vh 2vh 2vh;
+  font-size: 35px;
+  color: $color-yellow;
+  background: $color-dark-grey;
+  @media (max-width:1600px ){
+    font-size: 30px;
+  }
+}
 // Body text
 // -------------------------
 
@@ -105,4 +154,25 @@ a {
   padding: 0;
   margin: 0;
   border: none;
+}
+
+.container-project {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  .container-project {
+    width: 900px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-project {
+    width: 1050px;
+  }
+}
+
+.clear {
+  clear:both;
 }

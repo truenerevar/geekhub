@@ -30,6 +30,7 @@
         text-align: center;
       }
       li {
+        margin: 3px;
         display: inline-block;
 
       }
@@ -82,73 +83,29 @@
         margin-bottom: 20px;
       }
       ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         li {
           background: none;
+          margin: 0 1px;
           padding: 0px;
-          display: inline-block;
-        }
-        .facebook {
-          span {
-          height: 30px;
           width: 30px;
-          display: block;
-          background: url(../img/img-sprite.png) no-repeat -283px -14px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: $color-black;
+          flex-flow: row nowrap;
+          transition: all 0.5s ease-in-out;
+          &:hover {
+            background: $color-yellow;
+            a {
+              color: $color-black;
+            }
           }
-        }
-        .google {
-          span {
-            height: 30px;
-            width: 30px;
-            display: block;
-            background: url(../img/img-sprite.png) no-repeat -316px -14px;
-          }
-        }
-        .twitter {
-          span {
-            height: 30px;
-            width: 30px;
-            display: block;
-            background: url(../img/img-sprite.png) no-repeat -349px -14px;
-          }
-        }
-        .linkedin {
-          span {
-            height: 30px;
-            width: 30px;
-            display: block;
-            background: url(../img/img-sprite.png) no-repeat -382px -14px;
-          }
-        }
-        .youtube {
-          span {
-            height: 30px;
-            width: 30px;
-            display: block;
-            background: url(../img/img-sprite.png) no-repeat -416px -14px;
-          }
-        }
-        .bloger {
-          span {
-            height: 30px;
-            width: 30px;
-            display: block;
-            background: url(../img/img-sprite.png) no-repeat -448px -14px;
-          }
-        }
-        .rss {
-          span {
-            height: 30px;
-            width: 30px;
-            display: block;
-            background: url(../img/img-sprite.png) no-repeat -482px -14px;
-          }
-        }
-        .dribble {
-          span {
-            height: 30px;
-            width: 30px;
-            display: block;
-            background: url(../img/img-sprite.png) no-repeat -515px -14px;
+          a {
+            color: $color-white;
           }
         }
       }

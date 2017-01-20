@@ -2,6 +2,11 @@
 
 @import 'vendors/reset';
 @import 'vendors/bootstrap-grid';
+@import "vendors/font-awesome.min";
+@import 'vendors/jquery.fancybox';
+@import 'vendors/fontello';
+@import 'vendors/flexslider';
+@import "vendors/progressbar";
 
 // variables, fonts, mixins, helpers... common styles used across the entire site
 
@@ -14,7 +19,14 @@
 @import 'layout/header';
 @import 'layout/main-slider';
 @import 'layout/services';
-@import 'layout/portfolio';
+@import 'layout/showcase';
 @import 'layout/clients';
 @import 'layout/info';
 @import 'layout/footer';
+@import 'layout/portfolio';
+@import 'layout/error';
+@import "layout/project";
+@import "layout/blog";
+@import "layout/contact";
+@import "layout/about";
+@import "layout/blog-page";

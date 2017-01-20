@@ -1,54 +1,161 @@
 .portfolio {
-  padding: 3vh 0;
-  background: $color-grey;
-  .clients-work-title {
-    margin-bottom: 4vh;
-    padding: 10px 30px;
-    position: relative;
-    display: inline-block;
-    color: $color-yellow;
-    background: $color-dark-grey;
-
-    &:before,
-    &:after {
-      content: "";
-      position: absolute;
-      top: 18px;
-      width: 100vw;
-      height: 1px;
-      background-color: #cacaca;
-      border: solid $color-grey;
-      border-width: 0 40px;
-    }
-
-    &:before {
-      left: -100vw;
-    }
-
-    &:after {
-      right: -100vw;
-    }
+  color: $color-dark-grey;
+  padding: 12vh 0;
+  text-align: center;
+  @media (max-width: 767px) {
+    padding: 6vh 0;
   }
-  .portfolio-text {
-    color: #424146;
-    font-size: 16px;
-    margin-bottom: 5vh;
-  }
-  .grid {
-    //max-width: 2000px;
-    .grid:after {
-      content: '';
-      display: block;
-      clear: both;
-    }
-    .grid-item {
-      padding: 1px;
-      img {
+  .portfolio-list {
+    padding: 0 0 15px;
+
+    li {
+      position: relative;
+      height: 350px;
+      overflow: hidden;
+      margin-top: 30px;
+
+      &:hover .overlay-content {
+        opacity: .5;
+      }
+
+      &:hover .overlay-text {
+        display: block;
+      }
+
+      .thumbnail {
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 350px;
         width: 100%;
       }
+
+      .pfbg-1 {
+        background-image: url('../img/portfolio/img-1.png')
+      }
+
+      .pfbg-2 {
+        background-image: url('../img/portfolio/img-2.png')
+      }
+
+      .pfbg-3 {
+        background-image: url('../img/portfolio/img-3.png')
+      }
+
+      .pfbg-4 {
+        background-image: url('../img/portfolio/img-4.png')
+      }
+
+      .pfbg-5 {
+        background-image: url('../img/portfolio/img-5.png')
+      }
+
+      .pfbg-6 {
+        background-image: url('../img/portfolio/img-6.png')
+      }
+
+      .pfbg-7 {
+        background-image: url('../img/portfolio/img-7.png')
+      }
+
+      .pfbg-8 {
+        background-image: url('../img/portfolio/img-8.png')
+      }
+
+      .pfbg-9 {
+        background-image: url('../img/portfolio/img-9.png')
+      }
+
+      .overlay-content {
+        margin: 0 auto;
+        height: 350px;
+        background: $color-yellow;
+        opacity: 0;
+        transition: transform 300ms;
+      }
+
+      .overlay-text {
+        position: absolute;
+        top: 66%;
+        left: 0;
+        transform: translate(0,-50%);
+        width: 100%;
+        color: $color-white;
+        display: none;
+        font-size: 80px;
+
+        h4 {
+          margin-bottom: 50px;
+        }
+
+        .view-project {
+          padding: 26px 18px;
+          color: $color-white;
+          background: $color-dark-grey;
+        }
+        span {
+          display: block;
+          margin-top: 30px;
+          .project-page {
+            font-size: 28px;
+            padding: 2px 20px;
+            border: 3px solid $color-dark-grey;
+            border-radius: 20px;
+            color: $color-dark-grey;
+            &:hover {
+              color: $color-black;
+              border: 3px solid $color-black;
+            }
+          }
+        }
+      }
     }
-    .grid-item--width2 { width: 17%; }
-    .grid-item--width3 { width: 16%; }
-    .grid-item--width4 { width: 33%; }
+  }
+}
+
+.portfolio-title {
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.portfolio-page-text {
+  font-size: 24px;
+  @media (max-width: 992px) {
+    font-size: 14px;
+  }
+}
+
+.portfolio-nav {
+  display: block;
+  text-align: center;
+  margin-bottom: 4vh;
+  font-size: 24px;
+  @media (max-width: 992px) {
+    font-size: 14px;
+  }
+
+  .portfolio-type {
+    display: inline-block;
+    padding: 15px 5px;
+    text-align: center;
+
+    a {
+      padding: 6px 20px;
+      color: $color-dark-grey;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-yellow;
+      }
+    }
+
+    .button:active,
+    .button.is-checked {
+      background-color: $color-yellow;
+      color: $color-white;
+    }
   }
 }
